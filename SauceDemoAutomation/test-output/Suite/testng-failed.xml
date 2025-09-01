@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="secret_sauce"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="user" value="standard_user"/>
+  <parameter name="url" value="https://www.saucedemo.com/"/>
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="HomePage Tests(failed)">
+    <classes>
+      <class name="tests.HomePage.Test_AddRemoveProduct">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addProductAndRemove"/>
+          <include name="captureFailure"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.HomePage.Test_AddRemoveProduct -->
+    </classes>
+  </test> <!-- HomePage Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

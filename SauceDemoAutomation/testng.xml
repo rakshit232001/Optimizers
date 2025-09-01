@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utils.TestListener" />
+	</listeners>
+	<parameter name="url" value="https://www.saucedemo.com/"></parameter>
+	<parameter name="user" value="standard_user"></parameter>
+	<parameter name="password" value="secret_sauce"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+
+	<!-- ================== Test case for Cart Page =================== -->
+	<!--<test name="CartPage Tests">
+		<classes>
+			<class name="tests.CartPage.Test_CartNavigation" />
+			<class name="tests.CartPage.Test_CartItem" />
+			<class name="tests.CartPage.Test_CartCheckout" />
+		</classes>
+	</test>-->
+	<!-- ================== Test case for Logout Page =================== -->
+	<!-- <test name="Logout Tests">
+		<classes>
+			<class name="tests.Test_LogOut" />
+		</classes>
+	</test> -->
+	
+	<!-- ================ Test case for Checkout Page ================== -->
+	<!--<test name="CheckoutPage Tests">
+        <classes>
+            <class name="tests.CheckoutPage.Test_verifyForm"/>
+            <class name="tests.CheckoutPage.Test_FinishCheckout"/>
+        </classes>
+    </test>-->
+    
+    <!-- ================== Test case for Home Page ==================== -->
+   <!-- <test name="HomePage Tests">
+        <classes>
+            <class name="tests.HomePage.Test_AddRemoveProduct"/>
+            <class name="tests.HomePage.Test_CheckQuantityInCart"/>
+            <class name="tests.HomePage.Test_SortOption"/>
+        </classes>
+    </test>-->
+    
+    <!-- ================== Test case for Login Page ==================== -->
+    <!--<test name="Login Tests">
+        <classes>
+            <class name="tests.LoginPage.LoginPageTest"/>
+        </classes>
+    </test>-->
+    <!--  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 -->
+    <!-- ================ Test case for Confirmation Page ================== -->
+    <test name="Confirmation Tests">
+        <classes>
+            <class name="tests.ConfirmationPage.ConfirmationPageTest"/>
+        </classes>
+    </test>
+</suite>

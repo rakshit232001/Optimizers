@@ -1,0 +1,21 @@
+2025-08-29 09:51:33 [INFO] base.BaseTest - =========================================
+2025-08-29 09:51:33 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-08-29 09:51:33 [INFO] base.BaseTest - =========================================
+2025-08-29 09:51:33 [INFO] base.BaseTest - Selected Browser: chrome
+2025-08-29 09:51:40 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-08-29 09:51:41 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-08-29 09:51:41 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-08-29 09:51:46 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-08-29 09:51:49 [INFO] utils.TestListener - ===== STARTING TEST: LoginUser =====
+2025-08-29 09:51:49 [INFO] base.BaseTest - Currently product in cart: 0
+2025-08-29 09:51:50 [INFO] pages.HomePage - Clicked on: Add Sauce Labs Backpack to cart
+2025-08-29 09:51:50 [INFO] pages.HomePage - Clicked on: Add Sauce Labs Bolt T-Shirt to cart
+2025-08-29 09:51:50 [INFO] base.BaseTest - Currently product in cart: 2
+2025-08-29 09:51:51 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-29 09:51:52 [INFO] pages.CartPage - Cart Page opened successfully. Title: Your Cart
+2025-08-29 09:51:52 [INFO] base.BaseTest - Products inside cart: [Sauce Labs Backpack, Sauce Labs Bolt T-Shirt]
+2025-08-29 09:51:52 [INFO] base.BaseTest - Cart products match with added products.
+2025-08-29 09:52:02 [INFO] utils.TestListener - ✅ TEST PASSED: LoginUser
+2025-08-29 09:52:03 [INFO] base.BaseTest - Browser closed.
+2025-08-29 09:52:03 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-08-29 09:52:03 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Login Tests =====
