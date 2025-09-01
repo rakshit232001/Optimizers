@@ -1,0 +1,13 @@
+2025-08-28 11:31:54 [INFO] base.BaseTest - =========================================
+2025-08-28 11:31:54 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-08-28 11:31:54 [INFO] base.BaseTest - =========================================
+2025-08-28 11:31:54 [INFO] base.BaseTest - Selected Browser: chrome
+2025-08-28 11:32:05 [INFO] utils.TestListener - ===== STARTING TEST: LoginUser =====
+2025-08-28 11:32:06 [INFO] pages.LoginPage - Entered 'locked_out_user' into: UserName Field
+2025-08-28 11:32:07 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-08-28 11:32:07 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-08-28 11:32:09 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-08-28 11:32:13 [INFO] utils.TestListener - ✅ TEST PASSED: LoginUser
+2025-08-28 11:32:14 [INFO] base.BaseTest - Browser closed.
+2025-08-28 11:32:14 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-08-28 11:32:14 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Login Tests =====

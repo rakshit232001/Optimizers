@@ -1,0 +1,22 @@
+2025-08-29 22:24:34 [INFO] base.BaseTest - =========================================
+2025-08-29 22:24:34 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-08-29 22:24:34 [INFO] base.BaseTest - =========================================
+2025-08-29 22:24:34 [INFO] base.BaseTest - Selected Browser: chrome
+2025-08-29 22:24:49 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-08-29 22:24:49 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-08-29 22:24:49 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-08-29 22:24:55 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-08-29 22:24:58 [INFO] utils.TestListener - ===== STARTING TEST: verifyCartPageOpens =====
+2025-08-29 22:24:58 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-29 22:24:58 [INFO] pages.CartPage - Cart Page opened successfully. Title: Your Cart
+2025-08-29 22:25:08 [INFO] utils.TestListener - ✅ TEST PASSED: verifyCartPageOpens
+2025-08-29 22:25:08 [INFO] utils.TestListener - ===== STARTING TEST: verifyCartIsEmptyInitially =====
+2025-08-29 22:25:08 [INFO] pages.CartPage - Cart is empty ✅
+2025-08-29 22:25:08 [INFO] utils.TestListener - ✅ TEST PASSED: verifyCartIsEmptyInitially
+2025-08-29 22:25:08 [INFO] utils.TestListener - ===== STARTING TEST: verifyContinueShoppingButton =====
+2025-08-29 22:25:08 [INFO] pages.CartPage - Clicked on: Continue Shopping
+2025-08-29 22:25:08 [INFO] pages.CartPage - ✅ Clicked Continue Shopping button.
+2025-08-29 22:25:09 [INFO] pages.HomePage - ✅ Home Page is open. Title: Products
+2025-08-29 22:25:09 [INFO] utils.TestListener - ✅ TEST PASSED: verifyContinueShoppingButton
+2025-08-29 22:25:09 [INFO] base.BaseTest - Browser closed.
+2025-08-29 22:25:09 [INFO] base.BaseTest - ===== Test Execution Finished =====

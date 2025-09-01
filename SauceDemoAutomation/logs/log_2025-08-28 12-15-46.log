@@ -1,0 +1,9 @@
+2025-08-28 12:15:46 [INFO] base.BaseTest - =========================================
+2025-08-28 12:15:46 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-08-28 12:15:46 [INFO] base.BaseTest - =========================================
+2025-08-28 12:15:46 [INFO] base.BaseTest - Selected Browser: chrome
+2025-08-28 12:16:01 [INFO] utils.TestListener - ===== STARTING TEST: LoginUser =====
+2025-08-28 12:16:02 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-08-28 12:16:03 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-08-28 12:16:03 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-08-28 12:16:08 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.

@@ -1,0 +1,64 @@
+2025-08-29 11:45:26 [INFO] base.BaseTest - =========================================
+2025-08-29 11:45:26 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-08-29 11:45:26 [INFO] base.BaseTest - =========================================
+2025-08-29 11:45:26 [INFO] base.BaseTest - Selected Browser: chrome
+2025-08-29 11:45:33 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-08-29 11:45:33 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-08-29 11:45:33 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-08-29 11:45:39 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-08-29 11:45:42 [INFO] utils.TestListener - ===== STARTING TEST: verifyAddedProductsAreInCart =====
+2025-08-29 11:45:42 [INFO] pages.HomePage - ✅ Home Page is open. Title: Products
+2025-08-29 11:45:42 [INFO] base.BaseTest - Currently product in cart: 0
+2025-08-29 11:45:42 [INFO] pages.HomePage - Clicked on: Add Sauce Labs Backpack to cart
+2025-08-29 11:45:42 [INFO] pages.HomePage - Clicked on: Add Sauce Labs Bolt T-Shirt to cart
+2025-08-29 11:45:43 [INFO] base.BaseTest - Currently product in cart: 2
+2025-08-29 11:45:43 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-29 11:45:43 [INFO] pages.CartPage - Cart Page opened successfully. Title: Your Cart
+2025-08-29 11:45:43 [INFO] base.BaseTest - Products inside cart: [Sauce Labs Backpack, Sauce Labs Bolt T-Shirt]
+2025-08-29 11:45:43 [INFO] base.BaseTest - Cart products match with added products.
+2025-08-29 11:45:43 [INFO] utils.TestListener - ✅ TEST PASSED: verifyAddedProductsAreInCart
+2025-08-29 11:45:43 [INFO] utils.TestListener - ===== STARTING TEST: verifyCheckoutButtonBehavior =====
+2025-08-29 11:45:43 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-29 11:45:44 [INFO] pages.CartPage - Cart still has 2 product(s)
+2025-08-29 11:45:44 [INFO] base.BaseTest - Cart not empty, clearing cart first...
+2025-08-29 11:45:44 [INFO] pages.CartPage - Clicked on: Remove Sauce Labs Backpack from cart
+2025-08-29 11:45:44 [INFO] pages.CartPage - Removed product from cart: Sauce Labs Backpack
+2025-08-29 11:45:44 [INFO] pages.CartPage - Clicked on: Remove Sauce Labs Bolt T-Shirt from cart
+2025-08-29 11:45:44 [INFO] pages.CartPage - Removed product from cart: Sauce Labs Bolt T-Shirt
+2025-08-29 11:45:44 [INFO] pages.CartPage - Checkout button enabled status: true
+2025-08-29 11:45:44 [ERROR] utils.TestListener - ❌ TEST FAILED: verifyCheckoutButtonBehavior
+java.lang.AssertionError: ❌ Checkout button should be disabled when cart is empty!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at tests.DemoPage.verifyCheckoutButtonBehavior(DemoPage.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-08-29 11:45:44 [ERROR] base.BaseTest - ❌ Test Failed: verifyCheckoutButtonBehavior
+2025-08-29 11:45:46 [INFO] base.BaseTest - Browser closed.
+2025-08-29 11:45:46 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-08-29 11:45:46 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Login Tests =====

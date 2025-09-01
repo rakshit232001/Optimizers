@@ -1,0 +1,156 @@
+2025-08-29 14:18:29 [INFO] base.BaseTest - =========================================
+2025-08-29 14:18:29 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-08-29 14:18:29 [INFO] base.BaseTest - =========================================
+2025-08-29 14:18:29 [INFO] base.BaseTest - Selected Browser: chrome
+2025-08-29 14:18:37 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-08-29 14:18:37 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-08-29 14:18:38 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-08-29 14:18:43 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-08-29 14:18:46 [INFO] pages.HomePage - Clicked on: Add Sauce Labs Backpack to cart
+2025-08-29 14:18:47 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-29 14:18:47 [INFO] pages.CartPage - Cart Page opened successfully. Title: Your Cart
+2025-08-29 14:18:47 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-08-29 14:18:47 [INFO] pages.CartPage - Clicked Checkout button, navigating to CheckoutPage.
+2025-08-29 14:18:47 [INFO] pages.CheckoutPage - Checkout Page opened successfully. Title: Checkout: Your Information
+2025-08-29 14:18:47 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-08-29 14:18:48 [INFO] pages.CheckoutPage - Entered 'John' into: First Name
+2025-08-29 14:18:53 [INFO] pages.CheckoutPage - Entered 'Doe' into: Last Name
+2025-08-29 14:18:54 [INFO] pages.CheckoutPage - Entered '12345' into: Postal Code
+2025-08-29 14:18:54 [INFO] pages.CheckoutPage - Entered checkout info: John Doe | 12345
+2025-08-29 14:18:54 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-08-29 14:18:54 [INFO] pages.CheckoutPage - Clicked Continue button.
+2025-08-29 14:18:54 [INFO] pages.CheckoutPage - ✅ Checkout Overview Page opened successfully.
+2025-08-29 14:18:54 [INFO] utils.TestListener - ✅ TEST PASSED: testCheckoutProcess
+2025-08-29 14:18:54 [INFO] pages.CheckoutPage - Clicked on: Click on Open Side Bar
+2025-08-29 14:18:55 [INFO] pages.CheckoutPage - Clicked on: Click on All items button
+2025-08-29 14:18:55 [INFO] pages.HomePage - ✅ Home Page is open. Title: Products
+2025-08-29 14:18:55 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-29 14:18:55 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-08-29 14:18:55 [INFO] pages.CartPage - Clicked Checkout button, navigating to CheckoutPage.
+2025-08-29 14:18:55 [INFO] pages.CheckoutPage - Checkout Page opened successfully. Title: Checkout: Your Information
+2025-08-29 14:18:55 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-08-29 14:18:55 [INFO] pages.CheckoutPage - Entered '' into: First Name
+2025-08-29 14:19:01 [INFO] pages.CheckoutPage - Entered 'Doe' into: Last Name
+2025-08-29 14:19:01 [INFO] pages.CheckoutPage - Entered '12345' into: Postal Code
+2025-08-29 14:19:01 [INFO] pages.CheckoutPage - Entered checkout info:  Doe | 12345
+2025-08-29 14:19:01 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-08-29 14:19:01 [INFO] pages.CheckoutPage - Clicked Continue button.
+2025-08-29 14:19:11 [DEBUG] pages.CheckoutPage - Checkout Overview Page not open yet (might be error case).
+2025-08-29 14:19:11 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: First Name is required
+2025-08-29 14:19:11 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: First Name is required
+2025-08-29 14:19:11 [INFO] utils.TestListener - ✅ TEST PASSED: testCheckoutProcess
+2025-08-29 14:19:11 [INFO] pages.CheckoutPage - Clicked on: Click on Open Side Bar
+2025-08-29 14:19:12 [INFO] pages.CheckoutPage - Clicked on: Click on All items button
+2025-08-29 14:19:12 [INFO] pages.HomePage - ✅ Home Page is open. Title: Products
+2025-08-29 14:19:12 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-29 14:19:12 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-08-29 14:19:12 [INFO] pages.CartPage - Clicked Checkout button, navigating to CheckoutPage.
+2025-08-29 14:19:12 [INFO] pages.CheckoutPage - Checkout Page opened successfully. Title: Checkout: Your Information
+2025-08-29 14:19:12 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-08-29 14:19:12 [INFO] pages.CheckoutPage - Entered 'John' into: First Name
+2025-08-29 14:19:18 [INFO] pages.CheckoutPage - Entered 'Doe' into: Last Name
+2025-08-29 14:19:18 [INFO] pages.CheckoutPage - Entered 'ABCD' into: Postal Code
+2025-08-29 14:19:18 [INFO] pages.CheckoutPage - Entered checkout info: John Doe | ABCD
+2025-08-29 14:19:18 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-08-29 14:19:18 [INFO] pages.CheckoutPage - Clicked Continue button.
+2025-08-29 14:19:18 [INFO] pages.CheckoutPage - ✅ Checkout Overview Page opened successfully.
+2025-08-29 14:19:18 [ERROR] utils.TestListener - ❌ TEST FAILED: testCheckoutProcess
+java.lang.AssertionError: ❌ Expected error but proceeded to Checkout Overview.
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at tests.DemoPage.testCheckoutProcess(DemoPage.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-08-29 14:19:18 [INFO] pages.CheckoutPage - Clicked on: Click on Open Side Bar
+2025-08-29 14:19:18 [ERROR] pages.CheckoutPage - Failed to click on: Click on All items button
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=139.0.7258.139)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a5d14e764cc0904717993a47ff8a801, clickElement {id=f.F745384A7A73EE2403D9C3938D712824.d.D61CD54E16D39F0E631952ECFF795B72.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\raksh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60633/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8a5d14e764cc0904717993a47ff8a801)] -> xpath: //a[text()='All Items']]
+Session ID: 8a5d14e764cc0904717993a47ff8a801
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at base.BasePage.click(BasePage.java:63)
+	at base.BasePage.openHomePage(BasePage.java:89)
+	at tests.DemoPage.afterMethod(DemoPage.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-08-29 14:19:18 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-08-29 14:19:18 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: testCheckoutProcess
+2025-08-29 14:19:18 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-08-29 14:19:18 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: testCheckoutProcess
+2025-08-29 14:19:19 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-08-29 14:19:19 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: testCheckoutProcess
+2025-08-29 14:19:19 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Login Tests =====

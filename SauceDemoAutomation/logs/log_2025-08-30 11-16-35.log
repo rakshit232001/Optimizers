@@ -1,0 +1,30 @@
+2025-08-30 11:16:35 [INFO] base.BaseTest - =========================================
+2025-08-30 11:16:35 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-08-30 11:16:35 [INFO] base.BaseTest - =========================================
+2025-08-30 11:16:35 [INFO] base.BaseTest - Selected Browser: chrome
+2025-08-30 11:16:42 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-08-30 11:16:42 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-08-30 11:16:43 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-08-30 11:16:48 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-08-30 11:16:51 [INFO] pages.HomePage - Clicked on: Add Sauce Labs Backpack to cart
+2025-08-30 11:16:52 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-08-30 11:16:52 [INFO] pages.CartPage - Cart Page opened successfully. Title: Your Cart
+2025-08-30 11:16:53 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-08-30 11:16:53 [INFO] pages.CartPage - Clicked Checkout button, navigating to CheckoutPage.
+2025-08-30 11:16:53 [INFO] pages.CheckoutPage - Checkout Page opened successfully. Title: Checkout: Your Information
+2025-08-30 11:16:56 [INFO] pages.CheckoutPage - Entered 'Rakshit' into: First Name
+2025-08-30 11:17:02 [INFO] pages.CheckoutPage - Entered 'Bhadoria' into: Last Name
+2025-08-30 11:17:04 [INFO] pages.CheckoutPage - Entered '123456' into: Postal Code
+2025-08-30 11:17:04 [INFO] pages.CheckoutPage - Entered checkout info: Rakshit Bhadoria | 123456
+2025-08-30 11:17:04 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-08-30 11:17:04 [INFO] pages.CheckoutPage - Clicked Continue button.
+2025-08-30 11:17:05 [INFO] pages.CheckoutPage - ✅ Checkout Overview Page opened successfully.
+2025-08-30 11:17:05 [INFO] utils.TestListener - ===== STARTING TEST: testFinishCheckout =====
+2025-08-30 11:17:05 [INFO] pages.CheckoutPage - Clicked on: Finish Button
+2025-08-30 11:17:05 [INFO] pages.CheckoutPage - ✅ Clicked Finish button.
+2025-08-30 11:17:05 [INFO] pages.ConfirmationPage - Checking if order confirmation message is displayed.
+2025-08-30 11:17:05 [INFO] base.BaseTest - ✅ Checkout Completion test passed, confirmation displayed.
+2025-08-30 11:17:05 [INFO] utils.TestListener - ✅ TEST PASSED: testFinishCheckout
+2025-08-30 11:17:07 [INFO] base.BaseTest - Browser closed.
+2025-08-30 11:17:07 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-08-30 11:17:07 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: CheckoutPage Tests =====
