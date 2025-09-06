@@ -106,7 +106,7 @@ public class BaseTest {
             driver.quit();
             log.info("Browser closed.");
         }
-        log.info("===== Test Execution Finished =====");
+        log.info("===== Test Execution Finished =====\n");
     }
 
     /**
