@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="password" value="secret_sauce"/>
   <parameter name="browser" value="chrome"/>
-  <parameter name="user" value="standard_user"/>
   <parameter name="url" value="https://www.saucedemo.com/"/>
+  <parameter name="group" value="regression"/>
   <listeners>
     <listener class-name="utils.TestListener"/>
   </listeners>
-  <test thread-count="5" name="HomePage Tests(failed)">
+  <test thread-count="5" name="Confirmation Tests(failed)">
     <classes>
-      <class name="tests.HomePage.Test_AddRemoveProduct">
+      <class name="tests.DemoPage">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="addProductAndRemove"/>
           <include name="captureFailure"/>
-          <include name="beforeClass"/>
+          <include name="login_withSpacesInUsername"/>
+          <include name="setUp"/>
+          <include name="invalidLogin_wrongPassword"/>
+          <include name="login_withSQLInjectionString"/>
+          <include name="login_withCaseSensitiveUsername"/>
+          <include name="validLogin_standardUser"/>
+          <include name="lockedOutUserLogin"/>
+          <include name="login_withLongUsername"/>
+          <include name="invalidLogin_blankFields"/>
+          <include name="invalidLogin_wrongUsername"/>
         </methods>
-      </class> <!-- tests.HomePage.Test_AddRemoveProduct -->
+      </class> <!-- tests.DemoPage -->
     </classes>
-  </test> <!-- HomePage Tests(failed) -->
+  </test> <!-- Confirmation Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

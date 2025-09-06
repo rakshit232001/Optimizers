@@ -1,0 +1,18 @@
+2025-09-05 19:33:10 [INFO] base.BaseTest - =========================================
+2025-09-05 19:33:10 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-05 19:33:10 [INFO] base.BaseTest - =========================================
+2025-09-05 19:33:10 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-05 19:33:23 [INFO] base.BaseTest - sss
+2025-09-05 19:33:24 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-09-05 19:33:24 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-09-05 19:33:27 [INFO] utils.TestListener - ===== STARTING TEST: loginTest =====
+2025-09-05 19:33:28 [INFO] base.BaseTest - Running TestCase: 1 | Valid login with standard user
+2025-09-05 19:33:29 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-05 19:33:29 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-05 19:33:30 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-05 19:33:35 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-09-05 19:33:38 [INFO] base.BaseTest - 1 PASSED ✅ : User logged in successfully.
+2025-09-05 19:33:39 [INFO] utils.TestListener - ✅ TEST PASSED: loginTest
+2025-09-05 19:33:41 [INFO] base.BaseTest - Browser closed.
+2025-09-05 19:33:41 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-09-05 19:33:41 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====

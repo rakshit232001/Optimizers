@@ -27,16 +27,16 @@ public class Test_AddRemoveProduct extends BaseTest {
 
 	@Test(description = "Test for add some products then delete them")
 	public void addProductAndRemove() throws Exception {
-		homePage.addProduct(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
+		homePage.addProducts(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
 		Thread.sleep(5000);
-		homePage.removeProduct(
+		homePage.removeProducts(
 				Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
 		Thread.sleep(10000);
 	}
 
 	@Test(description = "Test for add some products")
 	public void addProduct() throws Exception {
-		homePage.addProduct(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
+		homePage.addProducts(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
 		Thread.sleep(5000);
 	}
 }

@@ -1,75 +1,87 @@
 package pages;
 
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.By;
-
 import base.BasePage;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.*;
 
+/**
+ * Page Object Model class for SauceDemo Login Page.
+ * 
+ * @Author: Rakshit Bhadoria 
+ * @version: Sept 2025
+ */
 public class LoginPage extends BasePage {
-	
-	public LoginPage(WebDriver driver) {
-		super(driver);
-		PageFactory.initElements(driver, this);
-	}
-	
-	@FindBy(id="user-name")
-	WebElement userNameFieldElement;
-	
-	@FindBy(id="password")
-	WebElement passwordFieldElement;
-	
-	@FindBy(id="login-button")
-	WebElement loginButtonElement;
-	
-	@FindBy(xpath = "//h3[@data-test='error']")
-	WebElement errorNotificationBy;
-	
-	By errorLBy = By.xpath("//h3[@data-test='error']");
-	
-	public LoginPage fillLoginPage(String username, String password){
+
+    // ==============================
+    // 🔹 Constructor
+    // ==============================
+    public LoginPage(WebDriver driver) {
+        super(driver);
+        PageFactory.initElements(driver, this);
+    }
+
+    // ==============================
+    // 🔹 Web Elements
+    // ==============================
+    @FindBy(id = "user-name")
+    private WebElement userNameFieldElement;
+
+    @FindBy(id = "password")
+    private WebElement passwordFieldElement;
+
+    @FindBy(id = "login-button")
+    private WebElement loginButtonElement;
+
+    @FindBy(xpath = "//h3[@data-test='error']")
+    private WebElement errorNotificationElement;
+
+    // Dynamic locator (for explicit waits when needed)
+    private final By errorLocator = By.xpath("//h3[@data-test='error']");
+
+    // ==============================
+    // 🔹 Page Actions
+    // ==============================
+
+    /**
+     * Fill username and password fields.
+     * @param username - user name to enter
+     * @param password - password to enter
+     * @return this LoginPage instance for method chaining
+     */
+    public LoginPage fillLoginPage(String username, String password) {
         type(userNameFieldElement, username, "UserName Field");
-        type(passwordFieldElement, password,"PasswordField");
+        type(passwordFieldElement, password, "Password Field");
         return this;
     }
-    
-    public HomePage clickLoginButton() throws Exception{
-        click(loginButtonElement,"Login Button");
-        Thread.sleep(2000);
-		try {
-			WebDriverWait shortWait = new WebDriverWait(driver, java.time.Duration.ofSeconds(3));
 
-			WebElement element = shortWait.until(ExpectedConditions.visibilityOfElementLocated(errorLBy));
-
-			String errorText = element.getText();
-			if (errorText.contains("Username and password do not match")) {
-				log.error("Login failed with error: " + errorText);
-				Assert.fail("Login failed with error: " + errorText); // or throw exception, depending on your design
-			}
-			else if (errorText.contains("locked out")) {
-				log.error("Login failed with error: " + errorText);
-				Assert.fail("Login failed with error: " + errorText); // or throw exception, depending on your design
-			}
-		} catch (org.openqa.selenium.TimeoutException e) {
-
-		}
-
-		log.info("Login submitted, navigating to Home Page.");
-		Thread.sleep(3000);
-		
+    /**
+     * Click the login button and navigate to HomePage.
+     * @return HomePage object
+     * @throws Exception if login fails or button is not clickable
+     */
+    public HomePage clickLoginButton() throws Exception {
+        click(loginButtonElement, "Login Button");
+        log.info("Login submitted.");
         return new HomePage(driver);
     }
-//    public void verifyFailedLogin(String expectedText){
-//        Assert.assertEquals(readTextFromElement(errorNotificationBy), expectedText);
-//        
-//    }
-//    public void verifyLogout(String expectedText){
-//        Assert.assertEquals(readAttributeValueAsText(loginButtonElement, "value"), expectedText);
-//    }
 
+    // ==============================
+    // 🔹 Page Validations / Getters
+    // ==============================
+
+    /**
+     * Fetch the login error message if visible.
+     * @return error message string, or null if not displayed
+     */
+    public String getLoginErrorMessage() {
+        try {
+            WebDriverWait shortWait = new WebDriverWait(driver, java.time.Duration.ofSeconds(3));
+            WebElement element = shortWait.until(
+                    ExpectedConditions.visibilityOfElementLocated(errorLocator));
+            return element.getText();
+        } catch (TimeoutException e) {
+            return null; // no error appeared
+        }
+    }
 }

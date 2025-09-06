@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\raksh\eclipse-workspace\SauceDemoAutomation\testng.xml</span>
+                    <span>C:\Users\raksh\OneDrive\Desktop\WIpro Training\Optimizers\SauceDemoAutomation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,47 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="LoginUser">LoginUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="invalidLogin_blankFields">invalidLogin_blankFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="invalidLogin_wrongPassword">invalidLogin_wrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="invalidLogin_wrongUsername">invalidLogin_wrongUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="lockedOutUserLogin">lockedOutUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withCaseSensitiveUsername">login_withCaseSensitiveUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withLongUsername">login_withLongUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withSQLInjectionString">login_withSQLInjectionString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withSpacesInUsername">login_withSpacesInUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="validLogin_standardUser">validLogin_standardUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +161,88 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.LoginPage.LoginPageTest</span>
+              <span class="class-name">tests.DemoPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginUser">
-                  </a> <!-- LoginUser -->
-                  <span class="method-name">LoginUser</span>
+                  <a name="invalidLogin_blankFields">
+                  </a> <!-- invalidLogin_blankFields -->
+                  <span class="method-name">invalidLogin_blankFields</span>
+                  <em>
+(Verify login fails when both username and password fields are blank.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLogin_wrongPassword">
+                  </a> <!-- invalidLogin_wrongPassword -->
+                  <span class="method-name">invalidLogin_wrongPassword</span>
+                  <em>
+(Verify login fails when using correct username but wrong password.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLogin_wrongUsername">
+                  </a> <!-- invalidLogin_wrongUsername -->
+                  <span class="method-name">invalidLogin_wrongUsername</span>
+                  <em>
+(Verify login fails when using invalid username with correct password.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutUserLogin">
+                  </a> <!-- lockedOutUserLogin -->
+                  <span class="method-name">lockedOutUserLogin</span>
+                  <em>
+(Verify login fails for a locked-out user.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_withCaseSensitiveUsername">
+                  </a> <!-- login_withCaseSensitiveUsername -->
+                  <span class="method-name">login_withCaseSensitiveUsername</span>
+                  <em>
+(Verify login fails if username is entered with wrong case (case-sensitive check).)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_withLongUsername">
+                  </a> <!-- login_withLongUsername -->
+                  <span class="method-name">login_withLongUsername</span>
+                  <em>
+(Verify login fails when username exceeds max length (long string).)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_withSQLInjectionString">
+                  </a> <!-- login_withSQLInjectionString -->
+                  <span class="method-name">login_withSQLInjectionString</span>
+                  <em>
+(Verify login fails when SQL injection string is used as username.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_withSpacesInUsername">
+                  </a> <!-- login_withSpacesInUsername -->
+                  <span class="method-name">login_withSpacesInUsername</span>
+                  <em>
+(Verify login fails if username contains leading/trailing spaces.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin_standardUser">
+                  </a> <!-- validLogin_standardUser -->
+                  <span class="method-name">validLogin_standardUser</span>
+                  <em>
+(Verify that a valid standard user can log in successfully.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,25 +250,24 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\raksh\eclipse-workspace\SauceDemoAutomation\testng.xml</span>
+            <span class="header-content">C:\Users\raksh\OneDrive\Desktop\WIpro Training\Optimizers\SauceDemoAutomation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;password&quot; value=&quot;secret_sauce&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;parameter name=&quot;user&quot; value=&quot;standard_user&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.saucedemo.com/&quot;/&gt;
+  &lt;parameter name=&quot;group&quot; value=&quot;regression&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login Tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Confirmation Tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.LoginPage.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;tests.DemoPage&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Tests --&gt;
+  &lt;/test&gt; &lt;!-- Confirmation Tests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,7 +279,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Tests (1 class)</span>
+                <span class="test-name">Confirmation Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,6 +289,66 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin_blankFields</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin_wrongPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin_wrongUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">lockedOutUserLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login_withCaseSensitiveUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login_withLongUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login_withSQLInjectionString</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login_withSpacesInUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin_standardUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin_blankFields</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin_standardUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin_standardUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -192,16 +365,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginUser')
-data.setCell(0, 2, 'tests.LoginPage.LoginPageTest')
-data.setCell(0, 3, 9197);
+data.setCell(0, 1, 'login_withLongUsername')
+data.setCell(0, 2, 'tests.DemoPage')
+data.setCell(0, 3, 11343);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validLogin_standardUser')
+data.setCell(1, 2, 'tests.DemoPage')
+data.setCell(1, 3, 3257);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidLogin_wrongPassword')
+data.setCell(2, 2, 'tests.DemoPage')
+data.setCell(2, 3, 3061);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidLogin_wrongUsername')
+data.setCell(3, 2, 'tests.DemoPage')
+data.setCell(3, 3, 1637);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'lockedOutUserLogin')
+data.setCell(4, 2, 'tests.DemoPage')
+data.setCell(4, 3, 1145);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login_withCaseSensitiveUsername')
+data.setCell(5, 2, 'tests.DemoPage')
+data.setCell(5, 3, 1122);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidLogin_blankFields')
+data.setCell(6, 2, 'tests.DemoPage')
+data.setCell(6, 3, 1080);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'login_withSpacesInUsername')
+data.setCell(7, 2, 'tests.DemoPage')
+data.setCell(7, 3, 1009);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'login_withSQLInjectionString')
+data.setCell(8, 2, 'tests.DemoPage')
+data.setCell(8, 3, 889);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,26 +432,90 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginPage.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.DemoPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
-                <span class="method-start">6954 ms</span>
+                <span class="method-name">navigateToUrl(https://www.saucedemo.com/)</span>
+                <span class="method-start">7756 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">LoginUser</span>
-                <span class="method-start">9678 ms</span>
+                <span class="method-name">validLogin_standardUser</span>
+                <span class="method-start">9361 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=LoginUser status=SUCCESS method=LoginPageTest.LoginUser()[pri:0, instance:tests.Log...)</span>
-                <span class="method-start">18883 ms</span>
+                <span class="method-name">captureFailure([TestResult name=validLogin_standardUser status=SUCCESS method=DemoPage.validLogin_standardUser()[pr...)</span>
+                <span class="method-start">12630 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin_wrongPassword</span>
+                <span class="method-start">12651 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=invalidLogin_wrongPassword status=SUCCESS method=DemoPage.invalidLogin_wrongPasswor...)</span>
+                <span class="method-start">15722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin_wrongUsername</span>
+                <span class="method-start">15731 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=invalidLogin_wrongUsername status=SUCCESS method=DemoPage.invalidLogin_wrongUsernam...)</span>
+                <span class="method-start">17374 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin_blankFields</span>
+                <span class="method-start">17387 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=invalidLogin_blankFields status=SUCCESS method=DemoPage.invalidLogin_blankFields()[...)</span>
+                <span class="method-start">18470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">lockedOutUserLogin</span>
+                <span class="method-start">18473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=lockedOutUserLogin status=SUCCESS method=DemoPage.lockedOutUserLogin()[pri:5, insta...)</span>
+                <span class="method-start">19622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withSpacesInUsername</span>
+                <span class="method-start">19633 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withSpacesInUsername status=SUCCESS method=DemoPage.login_withSpacesInUsernam...)</span>
+                <span class="method-start">20650 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withCaseSensitiveUsername</span>
+                <span class="method-start">20654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withCaseSensitiveUsername status=SUCCESS method=DemoPage.login_withCaseSensit...)</span>
+                <span class="method-start">21785 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withSQLInjectionString</span>
+                <span class="method-start">21792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withSQLInjectionString status=SUCCESS method=DemoPage.login_withSQLInjectionS...)</span>
+                <span class="method-start">22686 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withLongUsername</span>
+                <span class="method-start">22699 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withLongUsername status=SUCCESS method=DemoPage.login_withLongUsername()[pri:...)</span>
+                <span class="method-start">34046 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18889 ms</span>
+                <span class="method-start">34049 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

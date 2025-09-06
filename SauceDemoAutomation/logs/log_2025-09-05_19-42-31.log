@@ -1,0 +1,24 @@
+2025-09-05 19:42:31 [INFO] base.BaseTest - =========================================
+2025-09-05 19:42:31 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-05 19:42:31 [INFO] base.BaseTest - =========================================
+2025-09-05 19:42:31 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-05 19:42:50 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-09-05 19:42:50 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-09-05 19:42:53 [INFO] utils.TestListener - ===== STARTING TEST: loginTest =====
+2025-09-05 19:42:53 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:42:53 [INFO] base.BaseTest - ▶ Test Case: 1
+2025-09-05 19:42:53 [INFO] base.BaseTest -    ➤ Desc     : Valid login with standard user
+2025-09-05 19:42:53 [INFO] base.BaseTest -    ➤ Type     : Positive
+2025-09-05 19:42:53 [INFO] base.BaseTest -    ➤ Groups   : smoke, regression,sanity
+2025-09-05 19:42:53 [INFO] base.BaseTest -    ➤ Username : standard_user
+2025-09-05 19:42:53 [INFO] base.BaseTest -    ➤ Expected : success
+2025-09-05 19:42:53 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:42:53 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-05 19:42:54 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-05 19:42:54 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-05 19:42:59 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-09-05 19:43:07 [INFO] base.BaseTest - 1 PASSED ✅ : User logged in successfully.
+2025-09-05 19:43:25 [INFO] utils.TestListener - ✅ TEST PASSED: loginTest
+2025-09-05 19:43:28 [INFO] base.BaseTest - Browser closed.
+2025-09-05 19:43:28 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-09-05 19:43:28 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====

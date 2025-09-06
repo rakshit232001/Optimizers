@@ -1,7 +1,6 @@
 package pages;
 
 import java.util.List;
-import java.util.concurrent.TimeoutException;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -13,176 +12,91 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import base.BasePage;
 
+/**
+ * Page Object representing the Cart Page in SauceDemo.
+ * Contains methods to interact with cart elements and perform validations.
+ * 
+ * @Author: Rakshit Bhadoria 
+ * @version: Sept 2025
+ */
 public class CartPage extends BasePage {
 
-	public CartPage(WebDriver driver) {
-		super(driver);
-		PageFactory.initElements(driver, this);
-	}
-
-	private final String removeBtnByProductName = "//div[@class='cart_item' and .//div[@class='inventory_item_name' and text()='%s']]//button[text()='Remove']";
-
-	private final String productTitleByName = "//div[@class='cart_item']//div[@class='inventory_item_name' and text()='%s']";
-
-	@FindBy(xpath = "//button[text()='Remove']")
-	List<WebElement> removeButtonElements;
-
-	@FindBy(xpath = "//div[@class='inventory_item_name']")
-	List<WebElement> productTitleElements;
-
-	@FindBy(xpath = "//button[text()='Continue Shopping']")
-	WebElement continueButtonElement;
-
-	@FindBy(xpath = "//button[text()='Checkout']")
-	WebElement checkoutButtonElement;
-
-	@FindBy(xpath = "//span[@class='title' and text()='Your Cart']")
-	WebElement cartTitle;
-
-	// ✅ Verify Cart Page Open
-	public boolean isCartPageOpen() {
-		try {
-			// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-			WebElement element = wait.until(ExpectedConditions.visibilityOf(cartTitle));
-			String title = element.getText();
-
-			if (title.equalsIgnoreCase("Your Cart")) {
-				log.info("Cart Page opened successfully. Title: " + title);
-				return true;
-			} else {
-				log.info("❌ Cart Page title mismatch. Found: " + title);
-				return false;
-			}
-		} catch (Exception e) {
-			return false;
-		}
-	}
-
-	// ✅ Get All Products from Cart
-	public List<String> getCartProductNames() {
-		try {
-			return productTitleElements.stream().map(WebElement::getText).toList();
-		} catch (Exception e) {
-			log.error("❌ Failed to fetch product names from cart", e);
-			return List.of();
-		}
-	}
-
-	/**
-	 * Remove a specific product from the cart (by product name)
-	 */
-	public void removeProduct(String productName) {
-        try {
-            By productRemoveBtn = By.xpath(String.format(removeBtnByProductName, productName));
-            List<WebElement> buttons = driver.findElements(productRemoveBtn);
-
-            if (buttons.isEmpty()) {
-                log.error("❌ Product '" + productName + "' not found in cart to remove.");
-                Assert.fail("Product '" + productName + "' not present in cart to remove!");
-            } else {
-                click(buttons.get(0), "Remove " + productName + " from cart");
-                log.info("Removed product from cart: " + productName);
-            }
-        } catch (Exception e) {
-            log.error("❌ Failed to remove product: " + productName, e);
-            Assert.fail("Failed to remove product: " + productName);
-        }
+    // ==============================
+    // 🔹 Constructor
+    // ==============================
+    public CartPage(WebDriver driver) {
+        super(driver);
+        PageFactory.initElements(driver, this);
     }
 
-	/**
-	 * Check if the cart is empty
-	 */
-	public boolean isCartEmpty() {
-		try {
-			int productCount = productTitleElements.size();
-			if (productCount == 0) {
-				log.info("Cart is empty ✅");
-				return true;
-			} else {
-				log.info("Cart still has " + productCount + " product(s)");
-				return false;
-			}
-		} catch (Exception e) {
-			log.error("❌ Failed to check if cart is empty", e);
-			return false;
-		}
-	}
+    // ==============================
+    // 🔹 Dynamic Locators
+    // ==============================
+    private static final String REMOVE_BTN_BY_PRODUCT_NAME =
+            "//div[@class='cart_item' and .//div[@class='inventory_item_name' and text()='%s']]//button[text()='Remove']";
 
-	/**
-	 * Get total count of products currently in cart
-	 */
-	public int getCartItemCount() {
-		try {
-			int count = productTitleElements.size();
-			log.info("Total products in cart: " + count);
-			return count;
-		} catch (Exception e) {
-			log.error("❌ Failed to get cart item count", e);
-			return 0;
-		}
-	}
-	
-	/**
-     * Check if product exists in cart
+    private static final String PRODUCT_TITLE_BY_NAME =
+            "//div[@class='cart_item']//div[@class='inventory_item_name' and text()='%s']";
+
+    // ==============================
+    // 🔹 Web Elements
+    // ==============================
+    @FindBy(xpath = "//button[text()='Remove']")
+    private List<WebElement> removeButtonElements;
+
+    @FindBy(xpath = "//div[@class='inventory_item_name']")
+    private List<WebElement> productTitleElements;
+
+    @FindBy(xpath = "//button[text()='Continue Shopping']")
+    private WebElement continueButtonElement;
+
+    @FindBy(xpath = "//button[text()='Checkout']")
+    private WebElement checkoutButtonElement;
+
+    @FindBy(xpath = "//span[@class='title' and text()='Your Cart']")
+    private WebElement cartTitle;
+
+    // ==============================
+    // 🔹 Page Validations
+    // ==============================
+
+    /**
+     * Verify if Cart Page is open.
+     *
+     * @return true if cart page is open, false otherwise
      */
-    public boolean isProductInCart(String productName) {
+    public boolean isCartPageOpen() {
         try {
-            By productLocator = By.xpath(String.format(productTitleByName, productName));
-            List<WebElement> product = driver.findElements(productLocator);
-
-            if (!product.isEmpty()) {
-                log.info("Product '" + productName + "' found in cart.");
+            WebElement element = wait.until(ExpectedConditions.visibilityOf(cartTitle));
+            String title = element.getText();
+            if (title.equalsIgnoreCase("Your Cart")) {
+                log.info("✅ Cart Page opened successfully.");
                 return true;
             } else {
-                log.info("❌ Product '" + productName + "' not found in cart.");
+                log.warn("❌ Cart Page title mismatch. Found: " + title);
                 return false;
             }
         } catch (Exception e) {
-            log.error("❌ Failed to check product in cart: " + productName, e);
+            log.error("❌ Cart Page not opened.", e);
             return false;
         }
     }
-    
-    
+
     /**
-     * Click on "Continue Shopping" button
-     * Navigates back to HomePage
+     * Check if cart is empty.
+     *
+     * @return true if cart is empty, false otherwise
      */
-    public HomePage clickContinueShopping() {
-        try {
-            click(continueButtonElement, "Continue Shopping");
-            log.info("✅ Clicked Continue Shopping button.");
-            return new HomePage(driver);
-        } catch (Exception e) {
-            log.error("❌ Failed to click Continue Shopping button", e);
-            Assert.fail("Continue Shopping button click failed!");
-            return null;
-        }
+    public boolean isCartEmpty() {
+        int productCount = productTitleElements.size();
+        log.info("Cart contains " + productCount + " product(s).");
+        return productCount == 0;
     }
-    
+
     /**
-     * Click on Checkout button
-     * Returns CheckoutPage object
-     */
-    public CheckoutPage clickCheckout() {
-        try {
-            if (checkoutButtonElement.isEnabled()) {
-                click(checkoutButtonElement, "Checkout Button");
-                log.info("Clicked Checkout button, navigating to CheckoutPage.");
-                return new CheckoutPage(driver); // Navigate to CheckoutPage
-            } else {
-                log.warn("⚠️ Checkout button is disabled, cannot proceed. Staying on CartPage.");
-                return null; // Return current CartPage
-            }
-        } catch (Exception e) {
-            log.error("❌ Failed to click Checkout button", e);
-            Assert.fail("Checkout button click failed!");
-        }
-		return null;
-    }
-    
-    /**
-     * Check if Checkout button is enabled
+     * Check if Checkout button is enabled.
+     *
+     * @return true if enabled, false otherwise
      */
     public boolean isCheckoutButtonEnabled() {
         try {
@@ -195,5 +109,89 @@ public class CartPage extends BasePage {
         }
     }
 
-    
+    /**
+     * Check if a specific product exists in the cart.
+     *
+     * @param productName product name to search
+     * @return true if present, false otherwise
+     */
+    public boolean isProductInCart(String productName) {
+        By productLocator = By.xpath(String.format(PRODUCT_TITLE_BY_NAME, productName));
+        boolean exists = !driver.findElements(productLocator).isEmpty();
+        log.info("Product '{}' presence in cart: {}", productName, exists);
+        return exists;
+    }
+
+    // ==============================
+    // 🔹 Getters
+    // ==============================
+
+    /**
+     * Get names of all products currently in the cart.
+     *
+     * @return list of product names
+     */
+    public List<String> getCartProductNames() {
+        return productTitleElements.stream().map(WebElement::getText).toList();
+    }
+
+    /**
+     * Get total count of products currently in cart.
+     *
+     * @return product count
+     */
+    public int getCartItemCount() {
+        int count = productTitleElements.size();
+        log.info("Total products in cart: " + count);
+        return count;
+    }
+
+    // ==============================
+    // 🔹 Actions
+    // ==============================
+
+    /**
+     * Remove a specific product from the cart.
+     *
+     * @param productName name of product to remove
+     */
+    public void removeProduct(String productName) {
+        By productRemoveBtn = By.xpath(String.format(REMOVE_BTN_BY_PRODUCT_NAME, productName));
+        List<WebElement> buttons = driver.findElements(productRemoveBtn);
+
+        if (buttons.isEmpty()) {
+            log.error("❌ Product '{}' not found in cart to remove.", productName);
+            Assert.fail("Product '" + productName + "' not present in cart to remove!");
+        } else {
+            click(buttons.get(0), "Remove " + productName + " from cart");
+            log.info("✅ Removed product from cart: " + productName);
+        }
+    }
+
+    /**
+     * Click on "Continue Shopping" button.
+     *
+     * @return HomePage object
+     */
+    public HomePage clickContinueShopping() {
+        click(continueButtonElement, "Continue Shopping");
+        log.info("✅ Clicked Continue Shopping button.");
+        return new HomePage(driver);
+    }
+
+    /**
+     * Click on "Checkout" button.
+     *
+     * @return CheckoutPage object if button is enabled, else null
+     */
+    public CheckoutPage clickCheckout() {
+        if (checkoutButtonElement.isEnabled()) {
+            click(checkoutButtonElement, "Checkout Button");
+            log.info("✅ Navigating to CheckoutPage.");
+            return new CheckoutPage(driver);
+        } else {
+            log.warn("⚠️ Checkout button is disabled, staying on CartPage.");
+            return null;
+        }
+    }
 }

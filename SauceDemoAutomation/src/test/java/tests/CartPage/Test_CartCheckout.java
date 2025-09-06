@@ -48,7 +48,7 @@ public class Test_CartCheckout extends BaseTest{
 
 		//  Add product and verify checkout
 		List<String> productsToAdd = List.of("Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt");
-		homePage.addProduct(productsToAdd);
+		homePage.addProducts(productsToAdd);
 
 		cartPage = homePage.openCart();
 

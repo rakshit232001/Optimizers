@@ -1,8 +1,6 @@
 package tests.CartPage;
 
-import java.util.Arrays;
 import java.util.List;
-
 import org.junit.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -49,7 +47,7 @@ public class CartPageTest extends BaseTest{
 		
 		List<String> productsToAdd = List.of("Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt");
 		log.info("Currently product in cart: "+ homePage.getCartProductCount());
-		homePage.addProduct(productsToAdd);
+		homePage.addProducts(productsToAdd);
 		log.info("Currently product in cart: "+ homePage.getCartProductCount());
 		
 		cartPage= homePage.openCart();
@@ -123,7 +121,7 @@ public class CartPageTest extends BaseTest{
 
 		//  Add product and verify checkout
 		List<String> productsToAdd = List.of("Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt");
-		homePage.addProduct(productsToAdd);
+		homePage.addProducts(productsToAdd);
 
 		cartPage = homePage.openCart();
 

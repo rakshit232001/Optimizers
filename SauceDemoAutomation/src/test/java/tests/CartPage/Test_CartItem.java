@@ -35,7 +35,7 @@ public class Test_CartItem extends BaseTest {
 		
 		List<String> productsToAdd = List.of("Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt");
 		log.info("Currently product in cart: "+ homePage.getCartProductCount());
-		homePage.addProduct(productsToAdd);
+		homePage.addProducts(productsToAdd);
 		log.info("Currently product in cart: "+ homePage.getCartProductCount());
 		
 		cartPage= homePage.openCart();
