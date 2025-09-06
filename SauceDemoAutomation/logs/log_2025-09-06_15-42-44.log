@@ -1,0 +1,67 @@
+2025-09-06 15:42:44 [INFO] base.BaseTest - =========================================
+2025-09-06 15:42:44 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-06 15:42:44 [INFO] base.BaseTest - =========================================
+2025-09-06 15:42:44 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-06 15:42:44 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.2.0
+2025-09-06 15:42:45 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=139 in cache (valid until 16:02:54 06/09/2025 IST)
+2025-09-06 15:42:45 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome139=139.0.7258.154 in cache (valid until 18:40:58 06/09/2025 IST)
+2025-09-06 15:42:45 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-06 15:42:45 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 139.0.7258.154 found in cache
+2025-09-06 15:42:45 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\raksh\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+2025-09-06 15:42:48 [INFO] utils.TestListener - ===== STARTING TEST: validLogin_standardUser =====
+2025-09-06 15:42:50 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-06 15:42:51 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-06 15:42:51 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:51 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:52 [INFO] utils.TestListener - ✅ TEST PASSED: validLogin_standardUser
+2025-09-06 15:42:52 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_wrongPassword =====
+2025-09-06 15:42:53 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-06 15:42:53 [INFO] pages.LoginPage - Entered 'wrong_pass' into: Password Field
+2025-09-06 15:42:54 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:54 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:54 [INFO] utils.TestListener - ✅ TEST PASSED: invalidLogin_wrongPassword
+2025-09-06 15:42:54 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_wrongUsername =====
+2025-09-06 15:42:54 [INFO] pages.LoginPage - Entered 'wrong_user' into: UserName Field
+2025-09-06 15:42:55 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-06 15:42:55 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:55 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:55 [INFO] utils.TestListener - ✅ TEST PASSED: invalidLogin_wrongUsername
+2025-09-06 15:42:55 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_blankFields =====
+2025-09-06 15:42:55 [INFO] pages.LoginPage - Entered '' into: UserName Field
+2025-09-06 15:42:55 [INFO] pages.LoginPage - Entered '' into: Password Field
+2025-09-06 15:42:56 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:56 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:56 [INFO] utils.TestListener - ✅ TEST PASSED: invalidLogin_blankFields
+2025-09-06 15:42:56 [INFO] utils.TestListener - ===== STARTING TEST: lockedOutUserLogin =====
+2025-09-06 15:42:56 [INFO] pages.LoginPage - Entered 'locked_out_user' into: UserName Field
+2025-09-06 15:42:56 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-06 15:42:56 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:56 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:57 [INFO] utils.TestListener - ✅ TEST PASSED: lockedOutUserLogin
+2025-09-06 15:42:57 [INFO] utils.TestListener - ===== STARTING TEST: login_withSpacesInUsername =====
+2025-09-06 15:42:57 [INFO] pages.LoginPage - Entered ' standard_user ' into: UserName Field
+2025-09-06 15:42:57 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-06 15:42:57 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:57 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:57 [INFO] utils.TestListener - ✅ TEST PASSED: login_withSpacesInUsername
+2025-09-06 15:42:57 [INFO] utils.TestListener - ===== STARTING TEST: login_withCaseSensitiveUsername =====
+2025-09-06 15:42:58 [INFO] pages.LoginPage - Entered 'Standard_User' into: UserName Field
+2025-09-06 15:42:58 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-06 15:42:58 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:58 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:58 [INFO] utils.TestListener - ✅ TEST PASSED: login_withCaseSensitiveUsername
+2025-09-06 15:42:58 [INFO] utils.TestListener - ===== STARTING TEST: login_withSQLInjectionString =====
+2025-09-06 15:42:58 [INFO] pages.LoginPage - Entered '' OR '1'='1' into: UserName Field
+2025-09-06 15:42:59 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-06 15:42:59 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:42:59 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:42:59 [INFO] utils.TestListener - ✅ TEST PASSED: login_withSQLInjectionString
+2025-09-06 15:42:59 [INFO] utils.TestListener - ===== STARTING TEST: login_withLongUsername =====
+2025-09-06 15:43:02 [INFO] pages.LoginPage - Entered 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' into: UserName Field
+2025-09-06 15:43:03 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-06 15:43:03 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-06 15:43:03 [INFO] pages.LoginPage - Login submitted.
+2025-09-06 15:43:03 [INFO] utils.TestListener - ✅ TEST PASSED: login_withLongUsername
+2025-09-06 15:43:04 [INFO] base.BaseTest - Browser closed.
+2025-09-06 15:43:04 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-09-06 15:43:04 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====
