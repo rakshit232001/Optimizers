@@ -27,7 +27,7 @@ public class Test_verifyForm extends BaseTest{
 		homePage = loginPage.clickLoginButton();
 
 		List<String> products = List.of("Sauce Labs Backpack");
-		homePage.addProduct(products);
+		homePage.addProducts(products);
 		cartPage = homePage.openCart();
 		Assert.assertTrue("❌ Cart page did not open properly.", cartPage.isCartPageOpen());
 

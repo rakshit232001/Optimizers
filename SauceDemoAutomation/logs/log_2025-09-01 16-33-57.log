@@ -1,0 +1,15 @@
+2025-09-01 16:33:57 [INFO] base.BaseTest - =========================================
+2025-09-01 16:33:57 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-01 16:33:57 [INFO] base.BaseTest - =========================================
+2025-09-01 16:33:57 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-01 16:34:06 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-01 16:34:06 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-01 16:34:06 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-01 16:34:11 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-09-01 16:34:15 [INFO] utils.TestListener - ===== STARTING TEST: verifyOrderConfirmationMessage =====
+2025-09-01 16:34:15 [INFO] pages.HomePage - Clicked on: Click on Open Side Bar
+2025-09-01 16:34:15 [INFO] pages.HomePage - Clicked on: Click on All items button
+2025-09-01 16:34:15 [INFO] utils.TestListener - ✅ TEST PASSED: verifyOrderConfirmationMessage
+2025-09-01 16:34:17 [INFO] base.BaseTest - Browser closed.
+2025-09-01 16:34:17 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-09-01 16:34:17 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====

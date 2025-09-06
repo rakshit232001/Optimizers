@@ -1,0 +1,61 @@
+2025-09-04 16:03:06 [INFO] base.BaseTest - =========================================
+2025-09-04 16:03:06 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-04 16:03:06 [INFO] base.BaseTest - =========================================
+2025-09-04 16:03:06 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-04 16:03:13 [INFO] utils.TestListener - ===== STARTING TEST: validLogin_standardUser =====
+2025-09-04 16:03:15 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-04 16:03:15 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-04 16:03:16 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:21 [INFO] pages.LoginPage - Login submitted, navigating to Home Page.
+2025-09-04 16:03:25 [INFO] utils.TestListener - ✅ TEST PASSED: validLogin_standardUser
+2025-09-04 16:03:25 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_wrongPassword =====
+2025-09-04 16:03:25 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-04 16:03:25 [INFO] pages.LoginPage - Entered 'wrong_pass' into: PasswordField
+2025-09-04 16:03:26 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:28 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Username and password do not match any user in this service
+2025-09-04 16:03:28 [INFO] utils.TestListener - ✅ TEST PASSED: invalidLogin_wrongPassword
+2025-09-04 16:03:28 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_wrongUsername =====
+2025-09-04 16:03:29 [INFO] pages.LoginPage - Entered 'wrong_user' into: UserName Field
+2025-09-04 16:03:29 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-04 16:03:30 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:32 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Username and password do not match any user in this service
+2025-09-04 16:03:32 [INFO] utils.TestListener - ✅ TEST PASSED: invalidLogin_wrongUsername
+2025-09-04 16:03:32 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_blankFields =====
+2025-09-04 16:03:32 [INFO] pages.LoginPage - Entered '' into: UserName Field
+2025-09-04 16:03:33 [INFO] pages.LoginPage - Entered '' into: PasswordField
+2025-09-04 16:03:33 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:35 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Username is required
+2025-09-04 16:03:35 [INFO] utils.TestListener - ✅ TEST PASSED: invalidLogin_blankFields
+2025-09-04 16:03:35 [INFO] utils.TestListener - ===== STARTING TEST: lockedOutUserLogin =====
+2025-09-04 16:03:36 [INFO] pages.LoginPage - Entered 'locked_out_user' into: UserName Field
+2025-09-04 16:03:37 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-04 16:03:37 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:39 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Sorry, this user has been locked out.
+2025-09-04 16:03:39 [INFO] utils.TestListener - ✅ TEST PASSED: lockedOutUserLogin
+2025-09-04 16:03:39 [INFO] utils.TestListener - ===== STARTING TEST: login_withSpacesInUsername =====
+2025-09-04 16:03:40 [INFO] pages.LoginPage - Entered ' standard_user ' into: UserName Field
+2025-09-04 16:03:44 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-04 16:03:45 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:47 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Username and password do not match any user in this service
+2025-09-04 16:03:47 [INFO] utils.TestListener - ✅ TEST PASSED: login_withSpacesInUsername
+2025-09-04 16:03:47 [INFO] utils.TestListener - ===== STARTING TEST: login_withCaseSensitiveUsername =====
+2025-09-04 16:03:48 [INFO] pages.LoginPage - Entered 'Standard_User' into: UserName Field
+2025-09-04 16:03:48 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-04 16:03:48 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:50 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Username and password do not match any user in this service
+2025-09-04 16:03:50 [INFO] utils.TestListener - ✅ TEST PASSED: login_withCaseSensitiveUsername
+2025-09-04 16:03:50 [INFO] utils.TestListener - ===== STARTING TEST: login_withSQLInjectionString =====
+2025-09-04 16:03:51 [INFO] pages.LoginPage - Entered '' OR '1'='1' into: UserName Field
+2025-09-04 16:03:51 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-04 16:03:51 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:53 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Username and password do not match any user in this service
+2025-09-04 16:03:53 [INFO] utils.TestListener - ✅ TEST PASSED: login_withSQLInjectionString
+2025-09-04 16:03:53 [INFO] utils.TestListener - ===== STARTING TEST: login_withLongUsername =====
+2025-09-04 16:03:56 [INFO] pages.LoginPage - Entered 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' into: UserName Field
+2025-09-04 16:03:57 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-04 16:03:57 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-04 16:03:59 [ERROR] pages.LoginPage - Login failed with error: Epic sadface: Username and password do not match any user in this service
+2025-09-04 16:03:59 [INFO] utils.TestListener - ✅ TEST PASSED: login_withLongUsername
+2025-09-04 16:04:00 [INFO] base.BaseTest - Browser closed.
+2025-09-04 16:04:00 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-09-04 16:04:00 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====

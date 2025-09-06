@@ -4,8 +4,7 @@
 		<listener class-name="utils.TestListener" />
 	</listeners>
 	<parameter name="url" value="https://www.saucedemo.com/"></parameter>
-	<parameter name="user" value="standard_user"></parameter>
-	<parameter name="password" value="secret_sauce"></parameter>
+	<parameter name="group" value="regression"></parameter>
 	<parameter name="browser" value="chrome"></parameter>
 
 	<!-- ================== Test case for Cart Page =================== -->
@@ -48,9 +47,14 @@
     </test>-->
     <!--  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 -->
     <!-- ================ Test case for Confirmation Page ================== -->
-    <test name="Confirmation Tests">
+   <!-- <test name="Confirmation Tests">
         <classes>
             <class name="tests.ConfirmationPage.ConfirmationPageTest"/>
+        </classes>
+    </test>-->
+    <test name="Confirmation Tests">
+        <classes>
+            <class name="tests.DemoPage"/>
         </classes>
     </test>
 </suite>

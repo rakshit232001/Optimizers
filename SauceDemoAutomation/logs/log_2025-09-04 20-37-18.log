@@ -1,0 +1,5 @@
+2025-09-04 20:37:18 [INFO] base.BaseTest - =========================================
+2025-09-04 20:37:18 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-04 20:37:18 [INFO] base.BaseTest - =========================================
+2025-09-04 20:37:18 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-04 20:37:22 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====

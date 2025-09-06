@@ -1,0 +1,9 @@
+2025-09-05 19:09:11 [INFO] base.BaseTest - =========================================
+2025-09-05 19:09:11 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-05 19:09:11 [INFO] base.BaseTest - =========================================
+2025-09-05 19:09:11 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-05 19:09:20 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-09-05 19:09:20 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-09-05 19:09:24 [INFO] base.BaseTest - Browser closed.
+2025-09-05 19:09:24 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-09-05 19:09:24 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====

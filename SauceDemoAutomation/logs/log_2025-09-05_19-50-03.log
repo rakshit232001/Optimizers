@@ -1,0 +1,84 @@
+2025-09-05 19:50:04 [INFO] base.BaseTest - =========================================
+2025-09-05 19:50:04 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-05 19:50:04 [INFO] base.BaseTest - =========================================
+2025-09-05 19:50:04 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-05 19:50:28 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-09-05 19:50:28 [DEBUG] org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-09-05 19:50:35 [INFO] utils.TestListener - ===== STARTING TEST: loginTest =====
+2025-09-05 19:50:35 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:35 [INFO] base.BaseTest - ▶ Test Case: 1
+2025-09-05 19:50:35 [INFO] base.BaseTest -    ➤ Desc     : Valid login with standard user
+2025-09-05 19:50:35 [INFO] base.BaseTest -    ➤ Type     : Positive
+2025-09-05 19:50:36 [INFO] base.BaseTest -    ➤ Groups   : smoke, regression,sanity
+2025-09-05 19:50:36 [INFO] base.BaseTest -    ➤ Username : standard_user
+2025-09-05 19:50:36 [INFO] base.BaseTest -    ➤ Expected : success
+2025-09-05 19:50:36 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:36 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-05 19:50:37 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-05 19:50:38 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-05 19:50:38 [INFO] pages.LoginPage - Login submitted.
+2025-09-05 19:50:41 [INFO] base.BaseTest - 1 ✅ PASSED: User logged in successfully.
+2025-09-05 19:50:42 [INFO] utils.TestListener - ✅ TEST PASSED: loginTest
+2025-09-05 19:50:42 [INFO] utils.TestListener - ===== STARTING TEST: loginTest =====
+2025-09-05 19:50:42 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:42 [INFO] base.BaseTest - ▶ Test Case: 2
+2025-09-05 19:50:42 [INFO] base.BaseTest -    ➤ Desc     : Invalid login with wrong password
+2025-09-05 19:50:42 [INFO] base.BaseTest -    ➤ Type     : Negative
+2025-09-05 19:50:42 [INFO] base.BaseTest -    ➤ Groups   : regression
+2025-09-05 19:50:42 [INFO] base.BaseTest -    ➤ Username : standard_user
+2025-09-05 19:50:42 [INFO] base.BaseTest -    ➤ Expected : failure
+2025-09-05 19:50:42 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:42 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-05 19:50:43 [INFO] pages.LoginPage - Entered 'wrong_pass' into: PasswordField
+2025-09-05 19:50:43 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-05 19:50:43 [INFO] pages.LoginPage - Login submitted.
+2025-09-05 19:50:43 [INFO] base.BaseTest - 2 ✅ PASSED: Correct error displayed -> Epic sadface: Username and password do not match any user in this service
+2025-09-05 19:50:43 [INFO] utils.TestListener - ✅ TEST PASSED: loginTest
+2025-09-05 19:50:43 [INFO] utils.TestListener - ===== STARTING TEST: loginTest =====
+2025-09-05 19:50:43 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:43 [INFO] base.BaseTest - ▶ Test Case: 3
+2025-09-05 19:50:43 [INFO] base.BaseTest -    ➤ Desc     : Login attempt for locked-out user
+2025-09-05 19:50:43 [INFO] base.BaseTest -    ➤ Type     : Negative
+2025-09-05 19:50:43 [INFO] base.BaseTest -    ➤ Groups   : regression
+2025-09-05 19:50:43 [INFO] base.BaseTest -    ➤ Username : locked_out_user
+2025-09-05 19:50:43 [INFO] base.BaseTest -    ➤ Expected : failure
+2025-09-05 19:50:43 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:44 [INFO] pages.LoginPage - Entered 'locked_out_user' into: UserName Field
+2025-09-05 19:50:44 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-05 19:50:45 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-05 19:50:45 [INFO] pages.LoginPage - Login submitted.
+2025-09-05 19:50:45 [INFO] base.BaseTest - 3 ✅ PASSED: Correct error displayed -> Epic sadface: Sorry, this user has been locked out.
+2025-09-05 19:50:45 [INFO] utils.TestListener - ✅ TEST PASSED: loginTest
+2025-09-05 19:50:45 [INFO] utils.TestListener - ===== STARTING TEST: loginTest =====
+2025-09-05 19:50:45 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:45 [INFO] base.BaseTest - ▶ Test Case: 4
+2025-09-05 19:50:45 [INFO] base.BaseTest -    ➤ Desc     : Blank username and password fields
+2025-09-05 19:50:45 [INFO] base.BaseTest -    ➤ Type     : Edge
+2025-09-05 19:50:45 [INFO] base.BaseTest -    ➤ Groups   : regression,sanity
+2025-09-05 19:50:45 [INFO] base.BaseTest -    ➤ Username : ''
+2025-09-05 19:50:45 [INFO] base.BaseTest -    ➤ Expected : failure
+2025-09-05 19:50:45 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:45 [INFO] pages.LoginPage - Entered '''' into: UserName Field
+2025-09-05 19:50:46 [INFO] pages.LoginPage - Entered '''' into: PasswordField
+2025-09-05 19:50:46 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-05 19:50:46 [INFO] pages.LoginPage - Login submitted.
+2025-09-05 19:50:46 [INFO] base.BaseTest - 4 ✅ PASSED: Correct error displayed -> Epic sadface: Username and password do not match any user in this service
+2025-09-05 19:50:46 [INFO] utils.TestListener - ✅ TEST PASSED: loginTest
+2025-09-05 19:50:46 [INFO] utils.TestListener - ===== STARTING TEST: loginTest =====
+2025-09-05 19:50:46 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:46 [INFO] base.BaseTest - ▶ Test Case: 5
+2025-09-05 19:50:46 [INFO] base.BaseTest -    ➤ Desc     : SQL injection attempt
+2025-09-05 19:50:46 [INFO] base.BaseTest -    ➤ Type     : Edge
+2025-09-05 19:50:46 [INFO] base.BaseTest -    ➤ Groups   : regression
+2025-09-05 19:50:46 [INFO] base.BaseTest -    ➤ Username : ' OR '1'='1
+2025-09-05 19:50:46 [INFO] base.BaseTest -    ➤ Expected : failure
+2025-09-05 19:50:46 [INFO] base.BaseTest - ------------------------------------------------------------
+2025-09-05 19:50:46 [INFO] pages.LoginPage - Entered '' OR '1'='1' into: UserName Field
+2025-09-05 19:50:47 [INFO] pages.LoginPage - Entered 'secret_sauce' into: PasswordField
+2025-09-05 19:50:47 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-05 19:50:47 [INFO] pages.LoginPage - Login submitted.
+2025-09-05 19:50:47 [INFO] base.BaseTest - 5 ✅ PASSED: Correct error displayed -> Epic sadface: Username and password do not match any user in this service
+2025-09-05 19:50:47 [INFO] utils.TestListener - ✅ TEST PASSED: loginTest
+2025-09-05 19:50:48 [INFO] base.BaseTest - Browser closed.
+2025-09-05 19:50:48 [INFO] base.BaseTest - ===== Test Execution Finished =====
+2025-09-05 19:50:48 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====

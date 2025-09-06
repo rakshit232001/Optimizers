@@ -28,10 +28,10 @@ public class Test_CheckQuantityInCart extends BaseTest{
 	@Test
 	public void checkQuantity() throws Exception {
 		log.info("Currently product in cart: "+ homePage.getCartProductCount());
-		homePage.addProduct(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
+		homePage.addProducts(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
 		Thread.sleep(5000);
 		log.info("Currently product in cart: "+ homePage.getCartProductCount());
-		homePage.removeProduct(
+		homePage.removeProducts(
 				Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
 		Thread.sleep(10000);
 	}

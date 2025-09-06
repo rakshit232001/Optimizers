@@ -1,0 +1,23 @@
+2025-09-05 20:04:40 [INFO] base.BaseTest - =========================================
+2025-09-05 20:04:40 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-05 20:04:40 [INFO] base.BaseTest - =========================================
+2025-09-05 20:04:40 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: validLogin_standardUser =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: validLogin_standardUser
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_wrongPassword =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: invalidLogin_wrongPassword
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_wrongUsername =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: invalidLogin_wrongUsername
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: invalidLogin_blankFields =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: invalidLogin_blankFields
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: lockedOutUserLogin =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: lockedOutUserLogin
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: login_withSpacesInUsername =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: login_withSpacesInUsername
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: login_withCaseSensitiveUsername =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: login_withCaseSensitiveUsername
+2025-09-05 20:04:45 [INFO] utils.TestListener - ===== STARTING TEST: login_withSQLInjectionString =====
+2025-09-05 20:04:45 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: login_withSQLInjectionString
+2025-09-05 20:04:46 [INFO] utils.TestListener - ===== STARTING TEST: login_withLongUsername =====
+2025-09-05 20:04:46 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: login_withLongUsername
+2025-09-05 20:04:46 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: Confirmation Tests =====
