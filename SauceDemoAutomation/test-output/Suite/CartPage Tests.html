@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CartPage Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 30 10:18:37 IST 2025</td>
+<td>Started on:</td><td>Sun Sep 07 22:43:30 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (38 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36032 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,96 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.CartPage.Test_CartItem.verifyCheckoutButtonBehavior()'><b>verifyCheckoutButtonBehavior</b><br>Test class: tests.CartPage.Test_CartItem<br>Test method: Verify that Checkout button is disabled when cart is empty</td>
+<td><div><pre>java.lang.AssertionError: ❌ Checkout button should be disabled when cart is empty!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at tests.CartPage.Test_CartItem.verifyCheckoutButtonBehavior(Test_CartItem.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace551056181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace551056181'><pre>java.lang.AssertionError: ❌ Checkout button should be disabled when cart is empty!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at tests.CartPage.Test_CartItem.verifyCheckoutButtonBehavior(Test_CartItem.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartPage.Test_CartItem@64dafeed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.CartPage.Test_CartItem.verifyRemoveProductFromCart()'><b>verifyRemoveProductFromCart</b><br>Test class: tests.CartPage.Test_CartItem<br>Test method: Verify that user can remove product from cart</td>
+<td></td>
+<td>0</td>
+<td>tests.CartPage.Test_CartItem@64dafeed</td></tr>
+<tr>
+<td title='tests.CartPage.Test_CartNavigation.verifyCartIsEmptyInitially()'><b>verifyCartIsEmptyInitially</b><br>Test class: tests.CartPage.Test_CartNavigation<br>Test method: Verify that Cart Page is empty when no products are added</td>
+<td></td>
+<td>0</td>
+<td>tests.CartPage.Test_CartNavigation@295eaa7c</td></tr>
+<tr>
+<td title='tests.CartPage.Test_CartItem.verifyAddedProductsAreInCart()'><b>verifyAddedProductsAreInCart</b><br>Test class: tests.CartPage.Test_CartItem<br>Test method: Verify that the products added to the cart are displayed correctly in the cart page</td>
+<td></td>
+<td>1</td>
+<td>tests.CartPage.Test_CartItem@64dafeed</td></tr>
+<tr>
+<td title='tests.CartPage.Test_CartNavigation.verifyCartPageOpens()'><b>verifyCartPageOpens</b><br>Test class: tests.CartPage.Test_CartNavigation<br>Test method: Verify that the cart page opens when clicking on the cart button</td>
+<td></td>
+<td>10</td>
+<td>tests.CartPage.Test_CartNavigation@295eaa7c</td></tr>
+<tr>
+<td title='tests.CartPage.Test_CartNavigation.verifyContinueShoppingButton()'><b>verifyContinueShoppingButton</b><br>Test class: tests.CartPage.Test_CartNavigation<br>Test method: Verify that user can continue shopping from cart page</td>
+<td></td>
+<td>1</td>
+<td>tests.CartPage.Test_CartNavigation@295eaa7c</td></tr>
+<tr>
+<td title='tests.CartPage.Test_CartCheckout.verifyCheckout()'><b>verifyCheckout</b><br>Test class: tests.CartPage.Test_CartCheckout<br>Test method: Verify if we can checkout product(s)</td>
+<td></td>
+<td>4</td>
+<td>tests.CartPage.Test_CartCheckout@388ba540</td></tr>
+</table><p>
 </body>
 </html>

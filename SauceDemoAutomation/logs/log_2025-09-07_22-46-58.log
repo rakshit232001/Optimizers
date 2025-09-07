@@ -1,0 +1,31 @@
+2025-09-07 22:46:58 [INFO] base.BaseTest - =========================================
+2025-09-07 22:46:58 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-07 22:46:58 [INFO] base.BaseTest - =========================================
+2025-09-07 22:46:58 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-07 22:46:58 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.2.0
+2025-09-07 22:46:58 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=139 in cache (valid until 23:40:26 07/09/2025 IST)
+2025-09-07 22:46:58 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome139=139.0.7258.154 in cache (valid until 22:40:26 08/09/2025 IST)
+2025-09-07 22:46:58 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-07 22:46:58 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 139.0.7258.154 found in cache
+2025-09-07 22:46:58 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\raksh\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+2025-09-07 22:47:07 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-07 22:47:08 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-07 22:47:08 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-07 22:47:08 [INFO] pages.LoginPage - Login submitted.
+2025-09-07 22:47:08 [INFO] utils.TestListener - ===== STARTING TEST: testSortByNameAToZ =====
+2025-09-07 22:47:09 [INFO] pages.HomePage - ✅ Sorted products by option: Name (A to Z)
+2025-09-07 22:47:09 [INFO] utils.TestListener - ✅ TEST PASSED: testSortByNameAToZ
+2025-09-07 22:47:09 [INFO] utils.TestListener - ===== STARTING TEST: testSortByNameZToA =====
+2025-09-07 22:47:09 [INFO] pages.HomePage - ✅ Sorted products by option: Name (Z to A)
+2025-09-07 22:47:09 [INFO] utils.TestListener - ✅ TEST PASSED: testSortByNameZToA
+2025-09-07 22:47:09 [INFO] utils.TestListener - ===== STARTING TEST: testSortByPriceLowToHigh =====
+2025-09-07 22:47:09 [INFO] pages.HomePage - ✅ Sorted products by option: Price (low to high)
+2025-09-07 22:47:09 [INFO] utils.TestListener - ✅ TEST PASSED: testSortByPriceLowToHigh
+2025-09-07 22:47:09 [INFO] utils.TestListener - ===== STARTING TEST: testSortByPriceHighToLow =====
+2025-09-07 22:47:09 [INFO] pages.HomePage - ✅ Sorted products by option: Price (high to low)
+2025-09-07 22:47:10 [INFO] utils.TestListener - ✅ TEST PASSED: testSortByPriceHighToLow
+2025-09-07 22:47:16 [INFO] base.BaseTest - Browser closed.
+2025-09-07 22:47:16 [INFO] base.BaseTest - ===== Test Execution Finished =====
+
+2025-09-07 22:47:16 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: HomePage Tests =====
+2025-09-07 22:47:16 [INFO] utils.TestListener - ===== STARTING TEST SUITE: Login Tests =====

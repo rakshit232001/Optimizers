@@ -1,0 +1,73 @@
+2025-09-07 22:43:57 [INFO] base.BaseTest - =========================================
+2025-09-07 22:43:57 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-07 22:43:57 [INFO] base.BaseTest - =========================================
+2025-09-07 22:43:57 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-07 22:43:57 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.2.0
+2025-09-07 22:43:57 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=139 in cache (valid until 23:40:26 07/09/2025 IST)
+2025-09-07 22:43:57 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome139=139.0.7258.154 in cache (valid until 22:40:26 08/09/2025 IST)
+2025-09-07 22:43:57 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-07 22:43:57 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 139.0.7258.154 found in cache
+2025-09-07 22:43:57 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\raksh\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+2025-09-07 22:44:01 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-07 22:44:01 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-07 22:44:01 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-07 22:44:01 [INFO] pages.LoginPage - Login submitted.
+2025-09-07 22:44:01 [INFO] utils.TestListener - ===== STARTING TEST: verifyCheckout =====
+2025-09-07 22:44:01 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:44:02 [INFO] pages.CartPage - Cart contains 0 product(s).
+2025-09-07 22:44:05 [ERROR] pages.HomePage - ❌ Home Page did not load within expected time.
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[@data-test='title' and text()='Products'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\raksh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51746/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7080dc3331f153dcb7ed5bdcf51fc72
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.35.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.35.0.jar:?]
+	at pages.HomePage.isHomePageOpen(HomePage.java:208) ~[test-classes/:?]
+	at tests.CartPage.Test_CartCheckout.verifyCheckout(Test_CartCheckout.java:44) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-09-07 22:44:05 [INFO] base.BaseTest - ⚠️ HomePage not open. Navigating back.
+2025-09-07 22:44:05 [INFO] pages.CartPage - Clicked on: Continue Shopping
+2025-09-07 22:44:05 [INFO] pages.CartPage - ✅ Clicked Continue Shopping button.
+2025-09-07 22:44:05 [INFO] pages.HomePage - Clicked on: Add product: Sauce Labs Backpack
+2025-09-07 22:44:05 [INFO] pages.HomePage - ✅ Added product: Sauce Labs Backpack
+2025-09-07 22:44:05 [INFO] pages.HomePage - Clicked on: Add product: Sauce Labs Bolt T-Shirt
+2025-09-07 22:44:05 [INFO] pages.HomePage - ✅ Added product: Sauce Labs Bolt T-Shirt
+2025-09-07 22:44:05 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:44:05 [INFO] pages.CartPage - Checkout button enabled status: true
+2025-09-07 22:44:05 [INFO] base.BaseTest - Checkout button enabled after adding products.
+2025-09-07 22:44:06 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:44:06 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:44:06 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:44:06 [INFO] utils.TestListener - ✅ TEST PASSED: verifyCheckout
+2025-09-07 22:44:06 [INFO] base.BaseTest - Browser closed.
+2025-09-07 22:44:06 [INFO] base.BaseTest - ===== Test Execution Finished =====
+
+2025-09-07 22:44:06 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: CartPage Tests =====
+2025-09-07 22:44:06 [INFO] utils.TestListener - ===== STARTING TEST SUITE: Logout Tests =====

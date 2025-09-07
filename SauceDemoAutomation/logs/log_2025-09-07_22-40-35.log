@@ -1,0 +1,19 @@
+2025-09-07 22:40:36 [INFO] base.BaseTest - =========================================
+2025-09-07 22:40:36 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-07 22:40:36 [INFO] base.BaseTest - =========================================
+2025-09-07 22:40:36 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-07 22:40:36 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.2.0
+2025-09-07 22:40:36 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=139 in cache (valid until 23:40:26 07/09/2025 IST)
+2025-09-07 22:40:37 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome139=139.0.7258.154 in cache (valid until 22:40:26 08/09/2025 IST)
+2025-09-07 22:40:37 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-07 22:40:37 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 139.0.7258.154 found in cache
+2025-09-07 22:40:37 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\raksh\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+2025-09-07 22:40:41 [INFO] utils.TestListener - ===== STARTING TEST: verifyAddedProductsAreInCart =====
+2025-09-07 22:40:41 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: verifyAddedProductsAreInCart
+2025-09-07 22:40:41 [INFO] utils.TestListener - ===== STARTING TEST: verifyRemoveProductFromCart =====
+2025-09-07 22:40:41 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: verifyRemoveProductFromCart
+2025-09-07 22:40:41 [INFO] utils.TestListener - ===== STARTING TEST: verifyCheckoutButtonBehavior =====
+2025-09-07 22:40:41 [WARN] utils.TestListener - ⚠️ TEST SKIPPED: verifyCheckoutButtonBehavior
+2025-09-07 22:40:43 [INFO] base.BaseTest - Browser closed.
+2025-09-07 22:40:43 [INFO] base.BaseTest - ===== Test Execution Finished =====
+
