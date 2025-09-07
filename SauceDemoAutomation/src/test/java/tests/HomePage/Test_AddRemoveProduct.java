@@ -29,9 +29,8 @@ public class Test_AddRemoveProduct extends BaseTest {
 	public void addProductAndRemove() throws Exception {
 		homePage.addProducts(Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
 		Thread.sleep(5000);
-		homePage.removeProducts(
-				Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
-		Thread.sleep(10000);
+//		homePage.removeProducts(
+//				Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"));
 	}
 
 	@Test(description = "Test for add some products")

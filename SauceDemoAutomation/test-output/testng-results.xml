@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="33" passed="30" failed="3" skipped="0">
+<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-07T22:43:30 IST" name="Suite" finished-at="2025-09-07T22:47:37 IST" duration-ms="247141">
+  <suite started-at="2025-09-07T23:16:22 IST" name="Suite" finished-at="2025-09-07T23:19:44 IST" duration-ms="201759">
     <groups>
       <group name="regression">
-        <method signature="LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@1433046b]" name="validLogin_standardUser" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.invalidLogin_wrongPassword()[pri:2, instance:tests.LoginPage.LoginPageTest@1433046b]" name="invalidLogin_wrongPassword" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.invalidLogin_wrongUsername()[pri:3, instance:tests.LoginPage.LoginPageTest@1433046b]" name="invalidLogin_wrongUsername" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@1433046b]" name="invalidLogin_blankFields" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.lockedOutUserLogin()[pri:5, instance:tests.LoginPage.LoginPageTest@1433046b]" name="lockedOutUserLogin" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.login_withSpacesInUsername()[pri:6, instance:tests.LoginPage.LoginPageTest@1433046b]" name="login_withSpacesInUsername" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.login_withCaseSensitiveUsername()[pri:7, instance:tests.LoginPage.LoginPageTest@1433046b]" name="login_withCaseSensitiveUsername" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.login_withSQLInjectionString()[pri:8, instance:tests.LoginPage.LoginPageTest@1433046b]" name="login_withSQLInjectionString" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.login_withLongUsername()[pri:9, instance:tests.LoginPage.LoginPageTest@1433046b]" name="login_withLongUsername" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="validLogin_standardUser" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.invalidLogin_wrongPassword()[pri:2, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="invalidLogin_wrongPassword" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.invalidLogin_wrongUsername()[pri:3, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="invalidLogin_wrongUsername" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="invalidLogin_blankFields" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.lockedOutUserLogin()[pri:5, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="lockedOutUserLogin" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.login_withSpacesInUsername()[pri:6, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="login_withSpacesInUsername" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.login_withCaseSensitiveUsername()[pri:7, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="login_withCaseSensitiveUsername" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.login_withSQLInjectionString()[pri:8, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="login_withSQLInjectionString" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.login_withLongUsername()[pri:9, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="login_withLongUsername" class="tests.LoginPage.LoginPageTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@1433046b]" name="validLogin_standardUser" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="validLogin_standardUser" class="tests.LoginPage.LoginPageTest"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@1433046b]" name="validLogin_standardUser" class="tests.LoginPage.LoginPageTest"/>
-        <method signature="LoginPageTest.invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@1433046b]" name="invalidLogin_blankFields" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="validLogin_standardUser" class="tests.LoginPage.LoginPageTest"/>
+        <method signature="LoginPageTest.invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@6b5894c8]" name="invalidLogin_blankFields" class="tests.LoginPage.LoginPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-09-07T22:43:30 IST" name="CartPage Tests" finished-at="2025-09-07T22:44:06 IST" duration-ms="36032">
+    <test started-at="2025-09-07T23:16:22 IST" name="CartPage Tests" finished-at="2025-09-07T23:16:58 IST" duration-ms="35705">
       <class name="tests.CartPage.Test_CartNavigation">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:30 IST" name="setUp" finished-at="2025-09-07T22:43:34 IST" duration-ms="4003" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:22 IST" name="setUp" finished-at="2025-09-07T23:16:29 IST" duration-ms="6677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:34 IST" name="beforeClass" finished-at="2025-09-07T22:43:37 IST" duration-ms="2596" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:29 IST" name="beforeClass" finished-at="2025-09-07T23:16:31 IST" duration-ms="2645" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,58 +57,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyCartPageOpens()[pri:1, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:37 IST" name="verifyCartPageOpens" description="Verify that the cart page opens when clicking on the cart button" finished-at="2025-09-07T22:43:47 IST" duration-ms="10328" status="PASS">
+        <test-method signature="verifyCartPageOpens()[pri:1, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:31 IST" name="verifyCartPageOpens" description="Verify that the cart page opens when clicking on the cart button" finished-at="2025-09-07T23:16:42 IST" duration-ms="10795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartPageOpens -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:47 IST" name="captureFailure" finished-at="2025-09-07T22:43:47 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:42 IST" name="captureFailure" finished-at="2025-09-07T23:16:42 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCartPageOpens status=SUCCESS method=Test_CartNavigation.verifyCartPageOpens()[pri:1, instance:tests.CartPage.Test_CartNavigation@295eaa7c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCartPageOpens status=SUCCESS method=Test_CartNavigation.verifyCartPageOpens()[pri:1, instance:tests.CartPage.Test_CartNavigation@285c08c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="verifyCartIsEmptyInitially()[pri:2, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:47 IST" name="verifyCartIsEmptyInitially" description="Verify that Cart Page is empty when no products are added" finished-at="2025-09-07T22:43:47 IST" duration-ms="167" status="PASS">
+        <test-method signature="verifyCartIsEmptyInitially()[pri:2, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:42 IST" name="verifyCartIsEmptyInitially" description="Verify that Cart Page is empty when no products are added" finished-at="2025-09-07T23:16:42 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartIsEmptyInitially -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:47 IST" name="captureFailure" finished-at="2025-09-07T22:43:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:42 IST" name="captureFailure" finished-at="2025-09-07T23:16:42 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCartIsEmptyInitially status=SUCCESS method=Test_CartNavigation.verifyCartIsEmptyInitially()[pri:2, instance:tests.CartPage.Test_CartNavigation@295eaa7c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCartIsEmptyInitially status=SUCCESS method=Test_CartNavigation.verifyCartIsEmptyInitially()[pri:2, instance:tests.CartPage.Test_CartNavigation@285c08c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="verifyContinueShoppingButton()[pri:3, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:47 IST" name="verifyContinueShoppingButton" description="Verify that user can continue shopping from cart page" finished-at="2025-09-07T22:43:49 IST" duration-ms="1217" status="PASS">
+        <test-method signature="verifyContinueShoppingButton()[pri:3, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:42 IST" name="verifyContinueShoppingButton" description="Verify that user can continue shopping from cart page" finished-at="2025-09-07T23:16:43 IST" duration-ms="876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContinueShoppingButton -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:49 IST" name="captureFailure" finished-at="2025-09-07T22:43:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:43 IST" name="captureFailure" finished-at="2025-09-07T23:16:43 IST" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyContinueShoppingButton status=SUCCESS method=Test_CartNavigation.verifyContinueShoppingButton()[pri:3, instance:tests.CartPage.Test_CartNavigation@295eaa7c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyContinueShoppingButton status=SUCCESS method=Test_CartNavigation.verifyContinueShoppingButton()[pri:3, instance:tests.CartPage.Test_CartNavigation@285c08c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPage.Test_CartNavigation@295eaa7c]" started-at="2025-09-07T22:43:49 IST" name="tearDown" finished-at="2025-09-07T22:43:50 IST" duration-ms="989" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPage.Test_CartNavigation@285c08c8]" started-at="2025-09-07T23:16:43 IST" name="tearDown" finished-at="2025-09-07T23:16:44 IST" duration-ms="1178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CartPage.Test_CartNavigation -->
       <class name="tests.CartPage.Test_CartItem">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:50 IST" name="setUp" finished-at="2025-09-07T22:43:52 IST" duration-ms="2179" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CartPage.Test_CartItem@2c88b9fc]" started-at="2025-09-07T23:16:44 IST" name="setUp" finished-at="2025-09-07T23:16:46 IST" duration-ms="1822" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:52 IST" name="beforeClass" finished-at="2025-09-07T22:43:54 IST" duration-ms="2135" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CartPage.Test_CartItem@2c88b9fc]" started-at="2025-09-07T23:16:46 IST" name="beforeClass" finished-at="2025-09-07T23:16:48 IST" duration-ms="1772" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -140,97 +140,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyAddedProductsAreInCart()[pri:3, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:54 IST" name="verifyAddedProductsAreInCart" description="Verify that the products added to the cart are displayed correctly in the cart page" finished-at="2025-09-07T22:43:55 IST" duration-ms="1027" status="PASS">
+        <test-method signature="verifyAddedProductsAreInCart()[pri:3, instance:tests.CartPage.Test_CartItem@2c88b9fc]" started-at="2025-09-07T23:16:48 IST" name="verifyAddedProductsAreInCart" description="Verify that the products added to the cart are displayed correctly in the cart page" finished-at="2025-09-07T23:16:49 IST" duration-ms="741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedProductsAreInCart -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:55 IST" name="captureFailure" finished-at="2025-09-07T22:43:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartItem@2c88b9fc]" started-at="2025-09-07T23:16:49 IST" name="captureFailure" finished-at="2025-09-07T23:16:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddedProductsAreInCart status=SUCCESS method=Test_CartItem.verifyAddedProductsAreInCart()[pri:3, instance:tests.CartPage.Test_CartItem@64dafeed] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddedProductsAreInCart status=SUCCESS method=Test_CartItem.verifyAddedProductsAreInCart()[pri:3, instance:tests.CartPage.Test_CartItem@2c88b9fc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="verifyRemoveProductFromCart()[pri:4, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:55 IST" name="verifyRemoveProductFromCart" description="Verify that user can remove product from cart" finished-at="2025-09-07T22:43:55 IST" duration-ms="153" status="PASS">
+        <test-method signature="verifyRemoveProductFromCart()[pri:4, instance:tests.CartPage.Test_CartItem@2c88b9fc]" started-at="2025-09-07T23:16:49 IST" name="verifyRemoveProductFromCart" description="Verify that user can remove product from cart" finished-at="2025-09-07T23:16:49 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemoveProductFromCart -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:55 IST" name="captureFailure" finished-at="2025-09-07T22:43:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartItem@2c88b9fc]" started-at="2025-09-07T23:16:49 IST" name="captureFailure" finished-at="2025-09-07T23:16:49 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyRemoveProductFromCart status=SUCCESS method=Test_CartItem.verifyRemoveProductFromCart()[pri:4, instance:tests.CartPage.Test_CartItem@64dafeed] output={null}]]]>
+                <![CDATA[[TestResult name=verifyRemoveProductFromCart status=SUCCESS method=Test_CartItem.verifyRemoveProductFromCart()[pri:4, instance:tests.CartPage.Test_CartItem@2c88b9fc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="verifyCheckoutButtonBehavior()[pri:6, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:55 IST" name="verifyCheckoutButtonBehavior" description="Verify that Checkout button is disabled when cart is empty" finished-at="2025-09-07T22:43:56 IST" duration-ms="381" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[❌ Checkout button should be disabled when cart is empty!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ Checkout button should be disabled when cart is empty!
-at org.junit.Assert.fail(Assert.java:89)
-at org.junit.Assert.assertTrue(Assert.java:42)
-at org.junit.Assert.assertFalse(Assert.java:65)
-at tests.CartPage.Test_CartItem.verifyCheckoutButtonBehavior(Test_CartItem.java:81)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCheckoutButtonBehavior -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:56 IST" name="captureFailure" finished-at="2025-09-07T22:43:56 IST" duration-ms="221" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCheckoutButtonBehavior status=FAILURE method=Test_CartItem.verifyCheckoutButtonBehavior()[pri:6, instance:tests.CartPage.Test_CartItem@64dafeed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPage.Test_CartItem@64dafeed]" started-at="2025-09-07T22:43:56 IST" name="tearDown" finished-at="2025-09-07T22:43:57 IST" duration-ms="748" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPage.Test_CartItem@2c88b9fc]" started-at="2025-09-07T23:16:49 IST" name="tearDown" finished-at="2025-09-07T23:16:49 IST" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CartPage.Test_CartItem -->
       <class name="tests.CartPage.Test_CartCheckout">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CartPage.Test_CartCheckout@388ba540]" started-at="2025-09-07T22:43:57 IST" name="setUp" finished-at="2025-09-07T22:43:59 IST" duration-ms="2032" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CartPage.Test_CartCheckout@64dafeed]" started-at="2025-09-07T23:16:49 IST" name="setUp" finished-at="2025-09-07T23:16:51 IST" duration-ms="1902" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -241,7 +187,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CartPage.Test_CartCheckout@388ba540]" started-at="2025-09-07T22:43:59 IST" name="beforeClass" finished-at="2025-09-07T22:44:01 IST" duration-ms="2482" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CartPage.Test_CartCheckout@64dafeed]" started-at="2025-09-07T23:16:51 IST" name="beforeClass" finished-at="2025-09-07T23:16:53 IST" duration-ms="1672" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -262,30 +208,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyCheckout()[pri:0, instance:tests.CartPage.Test_CartCheckout@388ba540]" started-at="2025-09-07T22:44:01 IST" name="verifyCheckout" description="Verify if we can checkout product(s)" finished-at="2025-09-07T22:44:06 IST" duration-ms="4600" status="PASS">
+        <test-method signature="verifyCheckout()[pri:0, instance:tests.CartPage.Test_CartCheckout@64dafeed]" started-at="2025-09-07T23:16:53 IST" name="verifyCheckout" description="Verify if we can checkout product(s)" finished-at="2025-09-07T23:16:57 IST" duration-ms="4244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckout -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartCheckout@388ba540]" started-at="2025-09-07T22:44:06 IST" name="captureFailure" finished-at="2025-09-07T22:44:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CartPage.Test_CartCheckout@64dafeed]" started-at="2025-09-07T23:16:57 IST" name="captureFailure" finished-at="2025-09-07T23:16:57 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCheckout status=SUCCESS method=Test_CartCheckout.verifyCheckout()[pri:0, instance:tests.CartPage.Test_CartCheckout@388ba540] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCheckout status=SUCCESS method=Test_CartCheckout.verifyCheckout()[pri:0, instance:tests.CartPage.Test_CartCheckout@64dafeed] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPage.Test_CartCheckout@388ba540]" started-at="2025-09-07T22:44:06 IST" name="tearDown" finished-at="2025-09-07T22:44:06 IST" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPage.Test_CartCheckout@64dafeed]" started-at="2025-09-07T23:16:57 IST" name="tearDown" finished-at="2025-09-07T23:16:58 IST" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CartPage.Test_CartCheckout -->
     </test> <!-- CartPage Tests -->
-    <test started-at="2025-09-07T22:44:06 IST" name="Logout Tests" finished-at="2025-09-07T22:44:22 IST" duration-ms="15433">
+    <test started-at="2025-09-07T23:16:58 IST" name="Logout Tests" finished-at="2025-09-07T23:17:05 IST" duration-ms="6933">
       <class name="tests.Test_LogOut">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.Test_LogOut@2453f95d]" started-at="2025-09-07T22:44:06 IST" name="setUp" finished-at="2025-09-07T22:44:08 IST" duration-ms="1962" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.Test_LogOut@30990c1b]" started-at="2025-09-07T23:16:58 IST" name="setUp" finished-at="2025-09-07T23:17:00 IST" duration-ms="2153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -296,7 +242,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Test_LogOut@2453f95d]" started-at="2025-09-07T22:44:08 IST" name="beforeClass" finished-at="2025-09-07T22:44:10 IST" duration-ms="1679" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Test_LogOut@30990c1b]" started-at="2025-09-07T23:17:00 IST" name="beforeClass" finished-at="2025-09-07T23:17:03 IST" duration-ms="3268" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -317,30 +263,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="testLogOut()[pri:0, instance:tests.Test_LogOut@2453f95d]" started-at="2025-09-07T22:44:10 IST" name="testLogOut" finished-at="2025-09-07T22:44:21 IST" duration-ms="10798" status="PASS">
+        <test-method signature="testLogOut()[pri:0, instance:tests.Test_LogOut@30990c1b]" started-at="2025-09-07T23:17:03 IST" name="testLogOut" finished-at="2025-09-07T23:17:04 IST" duration-ms="683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogOut -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.Test_LogOut@2453f95d]" started-at="2025-09-07T22:44:21 IST" name="captureFailure" finished-at="2025-09-07T22:44:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.Test_LogOut@30990c1b]" started-at="2025-09-07T23:17:04 IST" name="captureFailure" finished-at="2025-09-07T23:17:04 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=Test_LogOut.testLogOut()[pri:0, instance:tests.Test_LogOut@2453f95d] output={null}]]]>
+                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=Test_LogOut.testLogOut()[pri:0, instance:tests.Test_LogOut@30990c1b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test_LogOut@2453f95d]" started-at="2025-09-07T22:44:21 IST" name="tearDown" finished-at="2025-09-07T22:44:22 IST" duration-ms="979" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test_LogOut@30990c1b]" started-at="2025-09-07T23:17:04 IST" name="tearDown" finished-at="2025-09-07T23:17:05 IST" duration-ms="806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.Test_LogOut -->
     </test> <!-- Logout Tests -->
-    <test started-at="2025-09-07T22:44:22 IST" name="CheckoutPage Tests" finished-at="2025-09-07T22:46:20 IST" duration-ms="118768">
+    <test started-at="2025-09-07T23:17:05 IST" name="CheckoutPage Tests" finished-at="2025-09-07T23:18:45 IST" duration-ms="100203">
       <class name="tests.CheckoutPage.Test_FinishCheckout">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@56ace400]" started-at="2025-09-07T22:46:15 IST" name="setUp" finished-at="2025-09-07T22:46:17 IST" duration-ms="2064" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@4de41af9]" started-at="2025-09-07T23:18:39 IST" name="setUp" finished-at="2025-09-07T23:18:41 IST" duration-ms="1905" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,7 +297,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@56ace400]" started-at="2025-09-07T22:46:17 IST" name="beforeClass" finished-at="2025-09-07T22:46:20 IST" duration-ms="3280" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@4de41af9]" started-at="2025-09-07T23:18:41 IST" name="beforeClass" finished-at="2025-09-07T23:18:44 IST" duration-ms="3004" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -372,28 +318,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="testFinishCheckout()[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@56ace400]" started-at="2025-09-07T22:46:20 IST" name="testFinishCheckout" description="Verify completing checkout process with Finish button" finished-at="2025-09-07T22:46:20 IST" duration-ms="137" status="PASS">
+        <test-method signature="testFinishCheckout()[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@4de41af9]" started-at="2025-09-07T23:18:44 IST" name="testFinishCheckout" description="Verify completing checkout process with Finish button" finished-at="2025-09-07T23:18:44 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFinishCheckout -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@56ace400]" started-at="2025-09-07T22:46:20 IST" name="captureFailure" finished-at="2025-09-07T22:46:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@4de41af9]" started-at="2025-09-07T23:18:44 IST" name="captureFailure" finished-at="2025-09-07T23:18:44 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testFinishCheckout status=SUCCESS method=Test_FinishCheckout.testFinishCheckout()[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@56ace400] output={null}]]]>
+                <![CDATA[[TestResult name=testFinishCheckout status=SUCCESS method=Test_FinishCheckout.testFinishCheckout()[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@4de41af9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@56ace400]" started-at="2025-09-07T22:46:20 IST" name="tearDown" finished-at="2025-09-07T22:46:20 IST" duration-ms="479" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutPage.Test_FinishCheckout@4de41af9]" started-at="2025-09-07T23:18:44 IST" name="tearDown" finished-at="2025-09-07T23:18:45 IST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CheckoutPage.Test_FinishCheckout -->
       <class name="tests.CheckoutPage.Test_verifyForm">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:22 IST" name="setUp" finished-at="2025-09-07T22:44:23 IST" duration-ms="1676" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:05 IST" name="setUp" finished-at="2025-09-07T23:17:07 IST" duration-ms="1933" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -404,7 +350,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:23 IST" name="beforeClass" finished-at="2025-09-07T22:44:26 IST" duration-ms="2448" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:07 IST" name="beforeClass" finished-at="2025-09-07T23:17:09 IST" duration-ms="2843" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -425,7 +371,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:26 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T22:44:27 IST" duration-ms="678" status="PASS">
+        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:09 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T23:17:10 IST" duration-ms="946" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -451,22 +397,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:27 IST" name="afterMethod" finished-at="2025-09-07T22:44:38 IST" duration-ms="11345" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:10 IST" name="afterMethod" finished-at="2025-09-07T23:17:11 IST" duration-ms="1013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:38 IST" name="captureFailure" finished-at="2025-09-07T22:44:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:11 IST" name="captureFailure" finished-at="2025-09-07T23:17:11 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8] output={null}]]]>
+                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:38 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T22:44:49 IST" duration-ms="10630" status="PASS">
+        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:11 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T23:17:22 IST" duration-ms="10902" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -492,102 +438,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:49 IST" name="afterMethod" finished-at="2025-09-07T22:44:59 IST" duration-ms="10572" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:22 IST" name="afterMethod" finished-at="2025-09-07T23:17:34 IST" duration-ms="11987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:59 IST" name="captureFailure" finished-at="2025-09-07T22:44:59 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailure -->
-        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:44:59 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T22:45:00 IST" duration-ms="676" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ABCD]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[❌ Expected error but proceeded to Checkout Overview.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ Expected error but proceeded to Checkout Overview.
-at org.junit.Assert.fail(Assert.java:89)
-at org.junit.Assert.assertTrue(Assert.java:42)
-at org.junit.Assert.assertFalse(Assert.java:65)
-at tests.CheckoutPage.Test_verifyForm.testCheckoutProcess(Test_verifyForm.java:61)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:00 IST" name="afterMethod" finished-at="2025-09-07T22:45:10 IST" duration-ms="10531" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:10 IST" name="captureFailure" finished-at="2025-09-07T22:45:10 IST" duration-ms="130" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCheckoutProcess status=FAILURE method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailure -->
-        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:10 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T22:45:21 IST" duration-ms="10734" status="PASS">
+        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:34 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T23:17:46 IST" duration-ms="11416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -613,22 +468,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:21 IST" name="afterMethod" finished-at="2025-09-07T22:45:32 IST" duration-ms="10580" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:32 IST" name="captureFailure" finished-at="2025-09-07T22:45:32 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:34 IST" name="captureFailure" finished-at="2025-09-07T23:17:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8] output={null}]]]>
+                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:32 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T22:45:42 IST" duration-ms="10541" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:46 IST" name="afterMethod" finished-at="2025-09-07T23:17:56 IST" duration-ms="10632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:56 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T23:18:07 IST" duration-ms="10636" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -654,11 +509,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:42 IST" name="afterMethod" finished-at="2025-09-07T22:45:53 IST" duration-ms="10531" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:17:56 IST" name="captureFailure" finished-at="2025-09-07T23:17:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailure -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:18:07 IST" name="afterMethod" finished-at="2025-09-07T23:18:18 IST" duration-ms="10633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:53 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T22:46:03 IST" duration-ms="10528" status="PASS">
+        <test-method signature="testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:18:18 IST" name="testCheckoutProcess" description="Verify checkout with valid and invalid data" data-provider="checkoutData" finished-at="2025-09-07T23:18:28 IST" duration-ms="10557" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -684,41 +550,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:45:53 IST" name="captureFailure" finished-at="2025-09-07T22:45:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:18:18 IST" name="captureFailure" finished-at="2025-09-07T23:18:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8] output={null}]]]>
+                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:46:03 IST" name="afterMethod" finished-at="2025-09-07T22:46:14 IST" duration-ms="10589" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:18:28 IST" name="afterMethod" finished-at="2025-09-07T23:18:39 IST" duration-ms="10650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:46:14 IST" name="captureFailure" finished-at="2025-09-07T22:46:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:18:39 IST" name="captureFailure" finished-at="2025-09-07T23:18:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8] output={null}]]]>
+                <![CDATA[[TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@4f071df8]" started-at="2025-09-07T22:46:14 IST" name="tearDown" finished-at="2025-09-07T22:46:15 IST" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutPage.Test_verifyForm@62fe6067]" started-at="2025-09-07T23:18:39 IST" name="tearDown" finished-at="2025-09-07T23:18:39 IST" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CheckoutPage.Test_verifyForm -->
     </test> <!-- CheckoutPage Tests -->
-    <test started-at="2025-09-07T22:46:21 IST" name="HomePage Tests" finished-at="2025-09-07T22:47:16 IST" duration-ms="55057">
+    <test started-at="2025-09-07T23:18:45 IST" name="HomePage Tests" finished-at="2025-09-07T23:19:27 IST" duration-ms="42379">
       <class name="tests.HomePage.Test_SortOption">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:46:58 IST" name="setUp" finished-at="2025-09-07T22:47:02 IST" duration-ms="3879" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:22 IST" name="setUp" finished-at="2025-09-07T23:19:24 IST" duration-ms="1795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -729,7 +595,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:02 IST" name="beforeClass" finished-at="2025-09-07T22:47:08 IST" duration-ms="6634" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:24 IST" name="beforeClass" finished-at="2025-09-07T23:19:26 IST" duration-ms="1755" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -750,73 +616,73 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="testSortByNameAToZ()[pri:1, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:08 IST" name="testSortByNameAToZ" finished-at="2025-09-07T22:47:09 IST" duration-ms="225" status="PASS">
+        <test-method signature="testSortByNameAToZ()[pri:1, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:26 IST" name="testSortByNameAToZ" finished-at="2025-09-07T23:19:26 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSortByNameAToZ -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:09 IST" name="captureFailure" finished-at="2025-09-07T22:47:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:26 IST" name="captureFailure" finished-at="2025-09-07T23:19:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSortByNameAToZ status=SUCCESS method=Test_SortOption.testSortByNameAToZ()[pri:1, instance:tests.HomePage.Test_SortOption@26a4842b] output={null}]]]>
+                <![CDATA[[TestResult name=testSortByNameAToZ status=SUCCESS method=Test_SortOption.testSortByNameAToZ()[pri:1, instance:tests.HomePage.Test_SortOption@557a1e2d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="testSortByNameZToA()[pri:2, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:09 IST" name="testSortByNameZToA" finished-at="2025-09-07T22:47:09 IST" duration-ms="280" status="PASS">
+        <test-method signature="testSortByNameZToA()[pri:2, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:26 IST" name="testSortByNameZToA" finished-at="2025-09-07T23:19:26 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSortByNameZToA -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:09 IST" name="captureFailure" finished-at="2025-09-07T22:47:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:26 IST" name="captureFailure" finished-at="2025-09-07T23:19:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSortByNameZToA status=SUCCESS method=Test_SortOption.testSortByNameZToA()[pri:2, instance:tests.HomePage.Test_SortOption@26a4842b] output={null}]]]>
+                <![CDATA[[TestResult name=testSortByNameZToA status=SUCCESS method=Test_SortOption.testSortByNameZToA()[pri:2, instance:tests.HomePage.Test_SortOption@557a1e2d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="testSortByPriceLowToHigh()[pri:3, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:09 IST" name="testSortByPriceLowToHigh" finished-at="2025-09-07T22:47:09 IST" duration-ms="324" status="PASS">
+        <test-method signature="testSortByPriceLowToHigh()[pri:3, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:26 IST" name="testSortByPriceLowToHigh" finished-at="2025-09-07T23:19:27 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSortByPriceLowToHigh -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:09 IST" name="captureFailure" finished-at="2025-09-07T22:47:09 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testSortByPriceLowToHigh status=SUCCESS method=Test_SortOption.testSortByPriceLowToHigh()[pri:3, instance:tests.HomePage.Test_SortOption@26a4842b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailure -->
-        <test-method signature="testSortByPriceHighToLow()[pri:4, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:09 IST" name="testSortByPriceHighToLow" finished-at="2025-09-07T22:47:10 IST" duration-ms="1216" status="PASS">
+        <test-method signature="testSortByPriceHighToLow()[pri:4, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:27 IST" name="testSortByPriceHighToLow" finished-at="2025-09-07T23:19:27 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSortByPriceHighToLow -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:10 IST" name="captureFailure" finished-at="2025-09-07T22:47:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:27 IST" name="captureFailure" finished-at="2025-09-07T23:19:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSortByPriceHighToLow status=SUCCESS method=Test_SortOption.testSortByPriceHighToLow()[pri:4, instance:tests.HomePage.Test_SortOption@26a4842b] output={null}]]]>
+                <![CDATA[[TestResult name=testSortByPriceLowToHigh status=SUCCESS method=Test_SortOption.testSortByPriceLowToHigh()[pri:3, instance:tests.HomePage.Test_SortOption@557a1e2d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePage.Test_SortOption@26a4842b]" started-at="2025-09-07T22:47:10 IST" name="tearDown" finished-at="2025-09-07T22:47:16 IST" duration-ms="5072" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:27 IST" name="captureFailure" finished-at="2025-09-07T23:19:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSortByPriceHighToLow status=SUCCESS method=Test_SortOption.testSortByPriceHighToLow()[pri:4, instance:tests.HomePage.Test_SortOption@557a1e2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePage.Test_SortOption@557a1e2d]" started-at="2025-09-07T23:19:27 IST" name="tearDown" finished-at="2025-09-07T23:19:27 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePage.Test_SortOption -->
       <class name="tests.HomePage.Test_CheckQuantityInCart">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@557a1e2d]" started-at="2025-09-07T22:46:36 IST" name="setUp" finished-at="2025-09-07T22:46:37 IST" duration-ms="1772" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@40e10ff8]" started-at="2025-09-07T23:19:01 IST" name="setUp" finished-at="2025-09-07T23:19:03 IST" duration-ms="2427" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -827,7 +693,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@557a1e2d]" started-at="2025-09-07T22:46:37 IST" name="beforeClass" finished-at="2025-09-07T22:46:39 IST" duration-ms="1850" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@40e10ff8]" started-at="2025-09-07T23:19:03 IST" name="beforeClass" finished-at="2025-09-07T23:19:06 IST" duration-ms="2874" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -848,28 +714,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="checkQuantity()[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@557a1e2d]" started-at="2025-09-07T22:46:39 IST" name="checkQuantity" finished-at="2025-09-07T22:46:55 IST" duration-ms="16208" status="PASS">
+        <test-method signature="checkQuantity()[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@40e10ff8]" started-at="2025-09-07T23:19:06 IST" name="checkQuantity" finished-at="2025-09-07T23:19:22 IST" duration-ms="15970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkQuantity -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@557a1e2d]" started-at="2025-09-07T22:46:55 IST" name="captureFailure" finished-at="2025-09-07T22:46:56 IST" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@40e10ff8]" started-at="2025-09-07T23:19:22 IST" name="captureFailure" finished-at="2025-09-07T23:19:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkQuantity status=SUCCESS method=Test_CheckQuantityInCart.checkQuantity()[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@557a1e2d] output={null}]]]>
+                <![CDATA[[TestResult name=checkQuantity status=SUCCESS method=Test_CheckQuantityInCart.checkQuantity()[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@40e10ff8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@557a1e2d]" started-at="2025-09-07T22:46:56 IST" name="tearDown" finished-at="2025-09-07T22:46:58 IST" duration-ms="2333" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePage.Test_CheckQuantityInCart@40e10ff8]" started-at="2025-09-07T23:19:22 IST" name="tearDown" finished-at="2025-09-07T23:19:22 IST" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePage.Test_CheckQuantityInCart -->
       <class name="tests.HomePage.Test_AddRemoveProduct">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8]" started-at="2025-09-07T22:46:21 IST" name="setUp" finished-at="2025-09-07T22:46:22 IST" duration-ms="1674" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372]" started-at="2025-09-07T23:18:45 IST" name="setUp" finished-at="2025-09-07T23:18:47 IST" duration-ms="1766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -880,7 +746,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8]" started-at="2025-09-07T22:46:22 IST" name="beforeClass" finished-at="2025-09-07T22:46:24 IST" duration-ms="2027" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372]" started-at="2025-09-07T23:18:47 IST" name="beforeClass" finished-at="2025-09-07T23:18:49 IST" duration-ms="2197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -901,83 +767,45 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="addProduct()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8]" started-at="2025-09-07T22:46:24 IST" name="addProduct" description="Test for add some products" finished-at="2025-09-07T22:46:30 IST" duration-ms="5353" status="PASS">
+        <test-method signature="addProduct()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372]" started-at="2025-09-07T23:18:49 IST" name="addProduct" description="Test for add some products" finished-at="2025-09-07T23:18:54 IST" duration-ms="5357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProduct -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8]" started-at="2025-09-07T22:46:30 IST" name="captureFailure" finished-at="2025-09-07T22:46:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372]" started-at="2025-09-07T23:18:54 IST" name="captureFailure" finished-at="2025-09-07T23:18:54 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addProduct status=SUCCESS method=Test_AddRemoveProduct.addProduct()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8] output={null}]]]>
+                <![CDATA[[TestResult name=addProduct status=SUCCESS method=Test_AddRemoveProduct.addProduct()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="addProductAndRemove()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8]" started-at="2025-09-07T22:46:30 IST" name="addProductAndRemove" description="Test for add some products then delete them" finished-at="2025-09-07T22:46:35 IST" duration-ms="5352" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Could not remove product: Sauce Labs Backpack]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Could not remove product: Sauce Labs Backpack
-at org.testng.Assert.fail(Assert.java:111)
-at pages.HomePage.removeProducts(HomePage.java:163)
-at tests.HomePage.Test_AddRemoveProduct.addProductAndRemove(Test_AddRemoveProduct.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="addProductAndRemove()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372]" started-at="2025-09-07T23:18:54 IST" name="addProductAndRemove" description="Test for add some products then delete them" finished-at="2025-09-07T23:18:59 IST" duration-ms="5286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductAndRemove -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8]" started-at="2025-09-07T22:46:35 IST" name="captureFailure" finished-at="2025-09-07T22:46:35 IST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372]" started-at="2025-09-07T23:18:59 IST" name="captureFailure" finished-at="2025-09-07T23:18:59 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addProductAndRemove status=FAILURE method=Test_AddRemoveProduct.addProductAndRemove()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8] output={null}]]]>
+                <![CDATA[[TestResult name=addProductAndRemove status=SUCCESS method=Test_AddRemoveProduct.addProductAndRemove()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@40e10ff8]" started-at="2025-09-07T22:46:35 IST" name="tearDown" finished-at="2025-09-07T22:46:36 IST" duration-ms="476" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePage.Test_AddRemoveProduct@275fe372]" started-at="2025-09-07T23:18:59 IST" name="tearDown" finished-at="2025-09-07T23:19:01 IST" duration-ms="1180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePage.Test_AddRemoveProduct -->
     </test> <!-- HomePage Tests -->
-    <test started-at="2025-09-07T22:47:16 IST" name="Login Tests" finished-at="2025-09-07T22:47:30 IST" duration-ms="14676">
+    <test started-at="2025-09-07T23:19:27 IST" name="Login Tests" finished-at="2025-09-07T23:19:38 IST" duration-ms="11184">
       <class name="tests.LoginPage.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:16 IST" name="setUp" finished-at="2025-09-07T22:47:18 IST" duration-ms="2532" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:27 IST" name="setUp" finished-at="2025-09-07T23:19:29 IST" duration-ms="1895" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -988,7 +816,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateToUrl(java.lang.String)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:18 IST" name="navigateToUrl" finished-at="2025-09-07T22:47:19 IST" depends-on-methods="base.BaseTest.setUp" duration-ms="1002" status="PASS">
+        <test-method is-config="true" signature="navigateToUrl(java.lang.String)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:29 IST" name="navigateToUrl" finished-at="2025-09-07T23:19:29 IST" depends-on-methods="base.BaseTest.setUp" duration-ms="262" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -999,150 +827,150 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToUrl -->
-        <test-method signature="validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:19 IST" name="validLogin_standardUser" description="Verify that a valid standard user can log in successfully." finished-at="2025-09-07T22:47:21 IST" duration-ms="1494" status="PASS">
+        <test-method signature="validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:29 IST" name="validLogin_standardUser" description="Verify that a valid standard user can log in successfully." finished-at="2025-09-07T23:19:31 IST" duration-ms="1924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin_standardUser -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:21 IST" name="captureFailure" finished-at="2025-09-07T22:47:21 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:31 IST" name="captureFailure" finished-at="2025-09-07T23:19:31 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLogin_standardUser status=SUCCESS method=LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=validLogin_standardUser status=SUCCESS method=LoginPageTest.validLogin_standardUser()[pri:1, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="invalidLogin_wrongPassword()[pri:2, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:21 IST" name="invalidLogin_wrongPassword" description="Verify login fails when using correct username but wrong password." finished-at="2025-09-07T22:47:21 IST" duration-ms="768" status="PASS">
+        <test-method signature="invalidLogin_wrongPassword()[pri:2, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:31 IST" name="invalidLogin_wrongPassword" description="Verify login fails when using correct username but wrong password." finished-at="2025-09-07T23:19:32 IST" duration-ms="602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLogin_wrongPassword -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:21 IST" name="captureFailure" finished-at="2025-09-07T22:47:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:32 IST" name="captureFailure" finished-at="2025-09-07T23:19:32 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLogin_wrongPassword status=SUCCESS method=LoginPageTest.invalidLogin_wrongPassword()[pri:2, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=invalidLogin_wrongPassword status=SUCCESS method=LoginPageTest.invalidLogin_wrongPassword()[pri:2, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="invalidLogin_wrongUsername()[pri:3, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:21 IST" name="invalidLogin_wrongUsername" description="Verify login fails when using invalid username with correct password." finished-at="2025-09-07T22:47:22 IST" duration-ms="711" status="PASS">
+        <test-method signature="invalidLogin_wrongUsername()[pri:3, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:32 IST" name="invalidLogin_wrongUsername" description="Verify login fails when using invalid username with correct password." finished-at="2025-09-07T23:19:33 IST" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLogin_wrongUsername -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:22 IST" name="captureFailure" finished-at="2025-09-07T22:47:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:33 IST" name="captureFailure" finished-at="2025-09-07T23:19:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLogin_wrongUsername status=SUCCESS method=LoginPageTest.invalidLogin_wrongUsername()[pri:3, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=invalidLogin_wrongUsername status=SUCCESS method=LoginPageTest.invalidLogin_wrongUsername()[pri:3, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:22 IST" name="invalidLogin_blankFields" description="Verify login fails when both username and password fields are blank." finished-at="2025-09-07T22:47:23 IST" duration-ms="636" status="PASS">
+        <test-method signature="invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:33 IST" name="invalidLogin_blankFields" description="Verify login fails when both username and password fields are blank." finished-at="2025-09-07T23:19:33 IST" duration-ms="478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLogin_blankFields -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:23 IST" name="captureFailure" finished-at="2025-09-07T22:47:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:33 IST" name="captureFailure" finished-at="2025-09-07T23:19:33 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLogin_blankFields status=SUCCESS method=LoginPageTest.invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=invalidLogin_blankFields status=SUCCESS method=LoginPageTest.invalidLogin_blankFields()[pri:4, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="lockedOutUserLogin()[pri:5, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:23 IST" name="lockedOutUserLogin" description="Verify login fails for a locked-out user." finished-at="2025-09-07T22:47:23 IST" duration-ms="683" status="PASS">
+        <test-method signature="lockedOutUserLogin()[pri:5, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:33 IST" name="lockedOutUserLogin" description="Verify login fails for a locked-out user." finished-at="2025-09-07T23:19:34 IST" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lockedOutUserLogin -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:23 IST" name="captureFailure" finished-at="2025-09-07T22:47:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:34 IST" name="captureFailure" finished-at="2025-09-07T23:19:34 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=lockedOutUserLogin status=SUCCESS method=LoginPageTest.lockedOutUserLogin()[pri:5, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=lockedOutUserLogin status=SUCCESS method=LoginPageTest.lockedOutUserLogin()[pri:5, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="login_withSpacesInUsername()[pri:6, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:23 IST" name="login_withSpacesInUsername" description="Verify login fails if username contains leading/trailing spaces." finished-at="2025-09-07T22:47:25 IST" duration-ms="1103" status="PASS">
+        <test-method signature="login_withSpacesInUsername()[pri:6, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:34 IST" name="login_withSpacesInUsername" description="Verify login fails if username contains leading/trailing spaces." finished-at="2025-09-07T23:19:34 IST" duration-ms="644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_withSpacesInUsername -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:25 IST" name="captureFailure" finished-at="2025-09-07T22:47:25 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:34 IST" name="captureFailure" finished-at="2025-09-07T23:19:34 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login_withSpacesInUsername status=SUCCESS method=LoginPageTest.login_withSpacesInUsername()[pri:6, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=login_withSpacesInUsername status=SUCCESS method=LoginPageTest.login_withSpacesInUsername()[pri:6, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="login_withCaseSensitiveUsername()[pri:7, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:25 IST" name="login_withCaseSensitiveUsername" description="Verify login fails if username is entered with wrong case (case-sensitive check)." finished-at="2025-09-07T22:47:25 IST" duration-ms="684" status="PASS">
+        <test-method signature="login_withCaseSensitiveUsername()[pri:7, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:34 IST" name="login_withCaseSensitiveUsername" description="Verify login fails if username is entered with wrong case (case-sensitive check)." finished-at="2025-09-07T23:19:35 IST" duration-ms="612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_withCaseSensitiveUsername -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:25 IST" name="captureFailure" finished-at="2025-09-07T22:47:25 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login_withCaseSensitiveUsername status=SUCCESS method=LoginPageTest.login_withCaseSensitiveUsername()[pri:7, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailure -->
-        <test-method signature="login_withSQLInjectionString()[pri:8, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:25 IST" name="login_withSQLInjectionString" description="Verify login fails when SQL injection string is used as username." finished-at="2025-09-07T22:47:26 IST" duration-ms="646" status="PASS">
+        <test-method signature="login_withSQLInjectionString()[pri:8, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:35 IST" name="login_withSQLInjectionString" description="Verify login fails when SQL injection string is used as username." finished-at="2025-09-07T23:19:35 IST" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_withSQLInjectionString -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:26 IST" name="captureFailure" finished-at="2025-09-07T22:47:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:35 IST" name="captureFailure" finished-at="2025-09-07T23:19:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login_withSQLInjectionString status=SUCCESS method=LoginPageTest.login_withSQLInjectionString()[pri:8, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=login_withCaseSensitiveUsername status=SUCCESS method=LoginPageTest.login_withCaseSensitiveUsername()[pri:7, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="login_withLongUsername()[pri:9, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:26 IST" name="login_withLongUsername" description="Verify login fails when username exceeds max length (long string)." finished-at="2025-09-07T22:47:29 IST" duration-ms="2987" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:35 IST" name="captureFailure" finished-at="2025-09-07T23:19:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_withSQLInjectionString status=SUCCESS method=LoginPageTest.login_withSQLInjectionString()[pri:8, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailure -->
+        <test-method signature="login_withLongUsername()[pri:9, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:35 IST" name="login_withLongUsername" description="Verify login fails when username exceeds max length (long string)." finished-at="2025-09-07T23:19:38 IST" duration-ms="2561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_withLongUsername -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:29 IST" name="captureFailure" finished-at="2025-09-07T22:47:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:38 IST" name="captureFailure" finished-at="2025-09-07T23:19:38 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login_withLongUsername status=SUCCESS method=LoginPageTest.login_withLongUsername()[pri:9, instance:tests.LoginPage.LoginPageTest@1433046b] output={null}]]]>
+                <![CDATA[[TestResult name=login_withLongUsername status=SUCCESS method=LoginPageTest.login_withLongUsername()[pri:9, instance:tests.LoginPage.LoginPageTest@6b5894c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPage.LoginPageTest@1433046b]" started-at="2025-09-07T22:47:29 IST" name="tearDown" finished-at="2025-09-07T22:47:30 IST" duration-ms="1347" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPage.LoginPageTest@6b5894c8]" started-at="2025-09-07T23:19:38 IST" name="tearDown" finished-at="2025-09-07T23:19:38 IST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginPage.LoginPageTest -->
     </test> <!-- Login Tests -->
-    <test started-at="2025-09-07T22:47:30 IST" name="Confirmation Tests" finished-at="2025-09-07T22:47:37 IST" duration-ms="7018">
+    <test started-at="2025-09-07T23:19:38 IST" name="Confirmation Tests" finished-at="2025-09-07T23:19:44 IST" duration-ms="5248">
       <class name="tests.ConfirmationPage.ConfirmationPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567]" started-at="2025-09-07T22:47:30 IST" name="setUp" finished-at="2025-09-07T22:47:33 IST" duration-ms="2241" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba]" started-at="2025-09-07T23:19:38 IST" name="setUp" finished-at="2025-09-07T23:19:40 IST" duration-ms="1706" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1153,7 +981,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567]" started-at="2025-09-07T22:47:33 IST" name="beforeClass" finished-at="2025-09-07T22:47:36 IST" duration-ms="3847" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba]" started-at="2025-09-07T23:19:40 IST" name="beforeClass" finished-at="2025-09-07T23:19:43 IST" duration-ms="2924" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1174,37 +1002,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyOrderConfirmationMessage()[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567]" started-at="2025-09-07T22:47:36 IST" name="verifyOrderConfirmationMessage" description="Verify that the order confirmation message is displayed after successful checkout" finished-at="2025-09-07T22:47:36 IST" duration-ms="32" status="PASS">
+        <test-method signature="verifyOrderConfirmationMessage()[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba]" started-at="2025-09-07T23:19:43 IST" name="verifyOrderConfirmationMessage" description="Verify that the order confirmation message is displayed after successful checkout" finished-at="2025-09-07T23:19:43 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderConfirmationMessage -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567]" started-at="2025-09-07T22:47:36 IST" name="captureFailure" finished-at="2025-09-07T22:47:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba]" started-at="2025-09-07T23:19:43 IST" name="captureFailure" finished-at="2025-09-07T23:19:43 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyOrderConfirmationMessage status=SUCCESS method=ConfirmationPageTest.verifyOrderConfirmationMessage()[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567] output={null}]]]>
+                <![CDATA[[TestResult name=verifyOrderConfirmationMessage status=SUCCESS method=ConfirmationPageTest.verifyOrderConfirmationMessage()[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method signature="verifyBackHomeNavigation()[pri:1, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567]" started-at="2025-09-07T22:47:36 IST" name="verifyBackHomeNavigation" description="Verify that clicking Back Home navigates user back to the inventory page" finished-at="2025-09-07T22:47:37 IST" duration-ms="195" status="PASS">
+        <test-method signature="verifyBackHomeNavigation()[pri:1, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba]" started-at="2025-09-07T23:19:43 IST" name="verifyBackHomeNavigation" description="Verify that clicking Back Home navigates user back to the inventory page" finished-at="2025-09-07T23:19:43 IST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBackHomeNavigation -->
-        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567]" started-at="2025-09-07T22:47:37 IST" name="captureFailure" finished-at="2025-09-07T22:47:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailure(org.testng.ITestResult)[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba]" started-at="2025-09-07T23:19:43 IST" name="captureFailure" finished-at="2025-09-07T23:19:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyBackHomeNavigation status=SUCCESS method=ConfirmationPageTest.verifyBackHomeNavigation()[pri:1, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567] output={null}]]]>
+                <![CDATA[[TestResult name=verifyBackHomeNavigation status=SUCCESS method=ConfirmationPageTest.verifyBackHomeNavigation()[pri:1, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@61bcd567]" started-at="2025-09-07T22:47:37 IST" name="tearDown" finished-at="2025-09-07T22:47:37 IST" duration-ms="691" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ConfirmationPage.ConfirmationPageTest@72445aba]" started-at="2025-09-07T23:19:43 IST" name="tearDown" finished-at="2025-09-07T23:19:44 IST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

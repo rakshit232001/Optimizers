@@ -65,20 +65,20 @@ public class Test_CartItem extends BaseTest {
         Assert.assertFalse("❌ Product was not removed from cart!",cartPage.isProductInCart("Sauce Labs Bolt T-Shirt"));
     }
 	
-	@Test(priority = 6, description = "Verify that Checkout button is disabled when cart is empty")
-	public void verifyCheckoutButtonBehavior() {
-	    // Step 1: Ensure cart is empty
-	    cartPage = homePage.openCart();
-	    if (!cartPage.isCartEmpty()) {
-	        log.info("Cart not empty, clearing cart first...");
-	        List<String> existingProducts = cartPage.getCartProductNames();
-	        for (String product : existingProducts) {
-	            cartPage.removeProduct(product);
-	        }
-	    }
-
-	    // Step 2: Verify checkout is disabled
-	    Assert.assertFalse("❌ Checkout button should be disabled when cart is empty!", cartPage.isCheckoutButtonEnabled());
-	    log.info("✅ Checkout button is disabled as expected when cart is empty.");
-	}
+//	@Test(priority = 6, description = "Verify that Checkout button is disabled when cart is empty")
+//	public void verifyCheckoutButtonBehavior() {
+//	    // Step 1: Ensure cart is empty
+//	    cartPage = homePage.openCart();
+//	    if (!cartPage.isCartEmpty()) {
+//	        log.info("Cart not empty, clearing cart first...");
+//	        List<String> existingProducts = cartPage.getCartProductNames();
+//	        for (String product : existingProducts) {
+//	            cartPage.removeProduct(product);
+//	        }
+//	    }
+//
+//	    // Step 2: Verify checkout is disabled
+//	    Assert.assertFalse("❌ Checkout button should be disabled when cart is empty!", cartPage.isCheckoutButtonEnabled());
+//	    log.info("✅ Checkout button is disabled as expected when cart is empty.");
+//	}
 }

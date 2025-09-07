@@ -1,0 +1,35 @@
+2025-09-07 23:16:44 [INFO] base.BaseTest - =========================================
+2025-09-07 23:16:44 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-07 23:16:44 [INFO] base.BaseTest - =========================================
+2025-09-07 23:16:44 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-07 23:16:44 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.2.0
+2025-09-07 23:16:45 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=139 in cache (valid until 23:40:26 07/09/2025 IST)
+2025-09-07 23:16:45 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome139=139.0.7258.154 in cache (valid until 22:40:26 08/09/2025 IST)
+2025-09-07 23:16:45 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-07 23:16:45 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 139.0.7258.154 found in cache
+2025-09-07 23:16:45 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\raksh\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+2025-09-07 23:16:48 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-07 23:16:48 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-07 23:16:48 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-07 23:16:48 [INFO] pages.LoginPage - Login submitted.
+2025-09-07 23:16:48 [INFO] utils.TestListener - ===== STARTING TEST: verifyAddedProductsAreInCart =====
+2025-09-07 23:16:48 [INFO] pages.HomePage - ✅ Home Page loaded successfully. Title: Products
+2025-09-07 23:16:48 [INFO] base.BaseTest - Currently product in cart: 0
+2025-09-07 23:16:48 [INFO] pages.HomePage - Clicked on: Add product: Sauce Labs Backpack
+2025-09-07 23:16:48 [INFO] pages.HomePage - ✅ Added product: Sauce Labs Backpack
+2025-09-07 23:16:49 [INFO] pages.HomePage - Clicked on: Add product: Sauce Labs Bolt T-Shirt
+2025-09-07 23:16:49 [INFO] pages.HomePage - ✅ Added product: Sauce Labs Bolt T-Shirt
+2025-09-07 23:16:49 [INFO] base.BaseTest - Currently product in cart: 2
+2025-09-07 23:16:49 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 23:16:49 [INFO] pages.CartPage - ✅ Cart Page opened successfully.
+2025-09-07 23:16:49 [INFO] base.BaseTest - Products inside cart: [Sauce Labs Backpack, Sauce Labs Bolt T-Shirt]
+2025-09-07 23:16:49 [INFO] base.BaseTest - Cart products match with added products.
+2025-09-07 23:16:49 [INFO] utils.TestListener - ✅ TEST PASSED: verifyAddedProductsAreInCart
+2025-09-07 23:16:49 [INFO] utils.TestListener - ===== STARTING TEST: verifyRemoveProductFromCart =====
+2025-09-07 23:16:49 [INFO] pages.CartPage - Clicked on: Remove Sauce Labs Bolt T-Shirt from cart
+2025-09-07 23:16:49 [INFO] pages.CartPage - ✅ Removed product from cart: Sauce Labs Bolt T-Shirt
+2025-09-07 23:16:49 [INFO] pages.CartPage - Product 'Sauce Labs Bolt T-Shirt' presence in cart: false
+2025-09-07 23:16:49 [INFO] utils.TestListener - ✅ TEST PASSED: verifyRemoveProductFromCart
+2025-09-07 23:16:49 [INFO] base.BaseTest - Browser closed.
+2025-09-07 23:16:49 [INFO] base.BaseTest - ===== Test Execution Finished =====
+

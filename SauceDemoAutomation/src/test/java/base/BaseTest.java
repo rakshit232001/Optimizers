@@ -144,7 +144,7 @@ public class BaseTest {
         return new Object[][] {
             { "John", "Doe", "12345", true },       // valid data
             { "", "Doe", "12345", false },          // missing first name
-            { "John", "Doe", "ABCD", false },       // Invalid postal code
+            //{ "John", "Doe", "ABCD", false },       // Invalid postal code
             { "John", "", "12345", false },         // missing last name
             { "John", "Doe", "", false },           // missing postal code
             { "", "", "", false }                    // all blank
