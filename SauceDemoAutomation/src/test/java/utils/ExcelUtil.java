@@ -9,7 +9,7 @@ public class ExcelUtil {
 
     public static Object[][] getTestData(String filePath, String sheetName, String groupFilter) {
         List<Object[]> data = new ArrayList<>();
-        DataFormatter formatter = new DataFormatter(); // ✅ handles all cell types
+        DataFormatter formatter = new DataFormatter(); // handles all cell types
 
         try (FileInputStream fis = new FileInputStream(filePath);
              Workbook workbook = new XSSFWorkbook(fis)) {
@@ -29,7 +29,7 @@ public class ExcelUtil {
                 String groups     = formatter.formatCellValue(row.getCell(5));
                 String desc       = formatter.formatCellValue(row.getCell(6));
                 
-                // ✅ Filter by group (matches partial string like "sanity" inside "smoke,sanity,regression")
+                // Filter by group (matches partial string like "sanity" inside "smoke,sanity,regression")
                 if (groups != null && !groups.isEmpty() &&
                     groups.toLowerCase().contains(groupFilter.toLowerCase())) {
                     data.add(new Object[]{ 

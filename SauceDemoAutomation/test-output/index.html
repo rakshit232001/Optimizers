@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">33 methods, 3 failed,   30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.HomePage.Test_AddRemoveProduct" class="method navigator-link" hash-for-method="addProductAndRemove">addProductAndRemove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CheckoutPage.Test_verifyForm" class="method navigator-link" hash-for-method="testCheckoutProcess(John, Doe, ABCD, false)">testCheckoutProcess(John, Doe, ABCD, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPage.Test_CartItem" class="method navigator-link" hash-for-method="verifyCheckoutButtonBehavior">verifyCheckoutButtonBehavior</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,47 +127,152 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="invalidLogin_blankFields">invalidLogin_blankFields</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.HomePage.Test_AddRemoveProduct" class="method navigator-link" hash-for-method="addProduct">addProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="invalidLogin_wrongPassword">invalidLogin_wrongPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.HomePage.Test_CheckQuantityInCart" class="method navigator-link" hash-for-method="checkQuantity">checkQuantity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="invalidLogin_wrongUsername">invalidLogin_wrongUsername</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="invalidLogin_blankFields">invalidLogin_blankFields</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="lockedOutUserLogin">lockedOutUserLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="invalidLogin_wrongPassword">invalidLogin_wrongPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withCaseSensitiveUsername">login_withCaseSensitiveUsername</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="invalidLogin_wrongUsername">invalidLogin_wrongUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withLongUsername">login_withLongUsername</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="lockedOutUserLogin">lockedOutUserLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withSQLInjectionString">login_withSQLInjectionString</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="login_withCaseSensitiveUsername">login_withCaseSensitiveUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="login_withSpacesInUsername">login_withSpacesInUsername</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="login_withLongUsername">login_withLongUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.DemoPage" class="method navigator-link" hash-for-method="validLogin_standardUser">validLogin_standardUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="login_withSQLInjectionString">login_withSQLInjectionString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="login_withSpacesInUsername">login_withSpacesInUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CheckoutPage.Test_verifyForm" class="method navigator-link" hash-for-method="testCheckoutProcess(John, Doe, 12345, true)">testCheckoutProcess(John, Doe, 12345, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CheckoutPage.Test_verifyForm" class="method navigator-link" hash-for-method="testCheckoutProcess(, Doe, 12345, false)">testCheckoutProcess(, Doe, 12345, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CheckoutPage.Test_verifyForm" class="method navigator-link" hash-for-method="testCheckoutProcess(John, , 12345, false)">testCheckoutProcess(John, , 12345, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CheckoutPage.Test_verifyForm" class="method navigator-link" hash-for-method="testCheckoutProcess(John, Doe, , false)">testCheckoutProcess(John, Doe, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CheckoutPage.Test_verifyForm" class="method navigator-link" hash-for-method="testCheckoutProcess(, , , false)">testCheckoutProcess(, , , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CheckoutPage.Test_FinishCheckout" class="method navigator-link" hash-for-method="testFinishCheckout">testFinishCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.Test_LogOut" class="method navigator-link" hash-for-method="testLogOut">testLogOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.HomePage.Test_SortOption" class="method navigator-link" hash-for-method="testSortByNameAToZ">testSortByNameAToZ</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.HomePage.Test_SortOption" class="method navigator-link" hash-for-method="testSortByNameZToA">testSortByNameZToA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.HomePage.Test_SortOption" class="method navigator-link" hash-for-method="testSortByPriceHighToLow">testSortByPriceHighToLow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.HomePage.Test_SortOption" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginPage.LoginPageTest" class="method navigator-link" hash-for-method="validLogin_standardUser">validLogin_standardUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPage.Test_CartItem" class="method navigator-link" hash-for-method="verifyAddedProductsAreInCart">verifyAddedProductsAreInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ConfirmationPage.ConfirmationPageTest" class="method navigator-link" hash-for-method="verifyBackHomeNavigation">verifyBackHomeNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPage.Test_CartNavigation" class="method navigator-link" hash-for-method="verifyCartIsEmptyInitially">verifyCartIsEmptyInitially</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPage.Test_CartNavigation" class="method navigator-link" hash-for-method="verifyCartPageOpens">verifyCartPageOpens</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPage.Test_CartCheckout" class="method navigator-link" hash-for-method="verifyCheckout">verifyCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPage.Test_CartNavigation" class="method navigator-link" hash-for-method="verifyContinueShoppingButton">verifyContinueShoppingButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ConfirmationPage.ConfirmationPageTest" class="method navigator-link" hash-for-method="verifyOrderConfirmationMessage">verifyOrderConfirmationMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPage.Test_CartItem" class="method navigator-link" hash-for-method="verifyRemoveProductFromCart">verifyRemoveProductFromCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -158,10 +287,236 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CheckoutPage.Test_verifyForm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutProcess(John, Doe, ABCD, false)">
+                  </a> <!-- testCheckoutProcess(John, Doe, ABCD, false) -->
+                  <span class="method-name">testCheckoutProcess</span>
+                  <span class="parameters">(John,Doe,ABCD,false)</span>
+                  <div class="stack-trace">java.lang.AssertionError: ❌ Expected error but proceeded to Checkout Overview.
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at tests.CheckoutPage.Test_verifyForm.testCheckoutProcess(Test_verifyForm.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify checkout with valid and invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CartPage.Test_CartItem</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutButtonBehavior">
+                  </a> <!-- verifyCheckoutButtonBehavior -->
+                  <span class="method-name">verifyCheckoutButtonBehavior</span>
+                  <div class="stack-trace">java.lang.AssertionError: ❌ Checkout button should be disabled when cart is empty!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at tests.CartPage.Test_CartItem.verifyCheckoutButtonBehavior(Test_CartItem.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that Checkout button is disabled when cart is empty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.HomePage.Test_AddRemoveProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductAndRemove">
+                  </a> <!-- addProductAndRemove -->
+                  <span class="method-name">addProductAndRemove</span>
+                  <div class="stack-trace">java.lang.AssertionError: Could not remove product: Sauce Labs Backpack
+	at pages.HomePage.removeProducts(HomePage.java:163)
+	at tests.HomePage.Test_AddRemoveProduct.addProductAndRemove(Test_AddRemoveProduct.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test for add some products then delete them)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.DemoPage</span>
+              <span class="class-name">tests.CartPage.Test_CartCheckout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckout">
+                  </a> <!-- verifyCheckout -->
+                  <span class="method-name">verifyCheckout</span>
+                  <em>
+(Verify if we can checkout product(s))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ConfirmationPage.ConfirmationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBackHomeNavigation">
+                  </a> <!-- verifyBackHomeNavigation -->
+                  <span class="method-name">verifyBackHomeNavigation</span>
+                  <em>
+(Verify that clicking Back Home navigates user back to the inventory page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrderConfirmationMessage">
+                  </a> <!-- verifyOrderConfirmationMessage -->
+                  <span class="method-name">verifyOrderConfirmationMessage</span>
+                  <em>
+(Verify that the order confirmation message is displayed after successful checkout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.HomePage.Test_CheckQuantityInCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkQuantity">
+                  </a> <!-- checkQuantity -->
+                  <span class="method-name">checkQuantity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.HomePage.Test_SortOption</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByNameAToZ">
+                  </a> <!-- testSortByNameAToZ -->
+                  <span class="method-name">testSortByNameAToZ</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByNameZToA">
+                  </a> <!-- testSortByNameZToA -->
+                  <span class="method-name">testSortByNameZToA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByPriceHighToLow">
+                  </a> <!-- testSortByPriceHighToLow -->
+                  <span class="method-name">testSortByPriceHighToLow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByPriceLowToHigh">
+                  </a> <!-- testSortByPriceLowToHigh -->
+                  <span class="method-name">testSortByPriceLowToHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckoutPage.Test_verifyForm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutProcess(John, Doe, 12345, true)">
+                  </a> <!-- testCheckoutProcess(John, Doe, 12345, true) -->
+                  <span class="method-name">testCheckoutProcess</span>
+                  <span class="parameters">(John,Doe,12345,true)</span>
+                  <em>
+(Verify checkout with valid and invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutProcess(, Doe, 12345, false)">
+                  </a> <!-- testCheckoutProcess(, Doe, 12345, false) -->
+                  <span class="method-name">testCheckoutProcess</span>
+                  <span class="parameters">(,Doe,12345,false)</span>
+                  <em>
+(Verify checkout with valid and invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutProcess(John, , 12345, false)">
+                  </a> <!-- testCheckoutProcess(John, , 12345, false) -->
+                  <span class="method-name">testCheckoutProcess</span>
+                  <span class="parameters">(John,,12345,false)</span>
+                  <em>
+(Verify checkout with valid and invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutProcess(John, Doe, , false)">
+                  </a> <!-- testCheckoutProcess(John, Doe, , false) -->
+                  <span class="method-name">testCheckoutProcess</span>
+                  <span class="parameters">(John,Doe,,false)</span>
+                  <em>
+(Verify checkout with valid and invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutProcess(, , , false)">
+                  </a> <!-- testCheckoutProcess(, , , false) -->
+                  <span class="method-name">testCheckoutProcess</span>
+                  <span class="parameters">(,,,false)</span>
+                  <em>
+(Verify checkout with valid and invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginPage.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -247,6 +602,116 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CartPage.Test_CartNavigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCartIsEmptyInitially">
+                  </a> <!-- verifyCartIsEmptyInitially -->
+                  <span class="method-name">verifyCartIsEmptyInitially</span>
+                  <em>
+(Verify that Cart Page is empty when no products are added)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCartPageOpens">
+                  </a> <!-- verifyCartPageOpens -->
+                  <span class="method-name">verifyCartPageOpens</span>
+                  <em>
+(Verify that the cart page opens when clicking on the cart button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContinueShoppingButton">
+                  </a> <!-- verifyContinueShoppingButton -->
+                  <span class="method-name">verifyContinueShoppingButton</span>
+                  <em>
+(Verify that user can continue shopping from cart page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Test_LogOut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogOut">
+                  </a> <!-- testLogOut -->
+                  <span class="method-name">testLogOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckoutPage.Test_FinishCheckout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFinishCheckout">
+                  </a> <!-- testFinishCheckout -->
+                  <span class="method-name">testFinishCheckout</span>
+                  <em>
+(Verify completing checkout process with Finish button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CartPage.Test_CartItem</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddedProductsAreInCart">
+                  </a> <!-- verifyAddedProductsAreInCart -->
+                  <span class="method-name">verifyAddedProductsAreInCart</span>
+                  <em>
+(Verify that the products added to the cart are displayed correctly in the cart page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRemoveProductFromCart">
+                  </a> <!-- verifyRemoveProductFromCart -->
+                  <span class="method-name">verifyRemoveProductFromCart</span>
+                  <em>
+(Verify that user can remove product from cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.HomePage.Test_AddRemoveProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProduct">
+                  </a> <!-- addProduct -->
+                  <span class="method-name">addProduct</span>
+                  <em>
+(Test for add some products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -257,15 +722,47 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;secret_sauce&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;user&quot; value=&quot;standard_user&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.saucedemo.com/&quot;/&gt;
   &lt;parameter name=&quot;group&quot; value=&quot;regression&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CartPage Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CartPage.Test_CartNavigation&quot;/&gt;
+      &lt;class name=&quot;tests.CartPage.Test_CartItem&quot;/&gt;
+      &lt;class name=&quot;tests.CartPage.Test_CartCheckout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CartPage Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Logout Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Test_LogOut&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Logout Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CheckoutPage Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CheckoutPage.Test_verifyForm&quot;/&gt;
+      &lt;class name=&quot;tests.CheckoutPage.Test_FinishCheckout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CheckoutPage Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HomePage Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.HomePage.Test_AddRemoveProduct&quot;/&gt;
+      &lt;class name=&quot;tests.HomePage.Test_CheckQuantityInCart&quot;/&gt;
+      &lt;class name=&quot;tests.HomePage.Test_SortOption&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomePage Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginPage.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Tests --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Confirmation Tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.DemoPage&quot;/&gt;
+      &lt;class name=&quot;tests.ConfirmationPage.ConfirmationPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Confirmation Tests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -278,6 +775,21 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
+              <li>
+                <span class="test-name">CartPage Tests (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Logout Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CheckoutPage Tests (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">HomePage Tests (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Login Tests (1 class)</span>
+              </li>
               <li>
                 <span class="test-name">Confirmation Tests (1 class)</span>
               </li>
@@ -365,48 +877,144 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(33);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login_withLongUsername')
-data.setCell(0, 2, 'tests.DemoPage')
-data.setCell(0, 3, 4064);
+data.setCell(0, 1, 'checkQuantity')
+data.setCell(0, 2, 'tests.HomePage.Test_CheckQuantityInCart')
+data.setCell(0, 3, 16208);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validLogin_standardUser')
-data.setCell(1, 2, 'tests.DemoPage')
-data.setCell(1, 3, 1708);
+data.setCell(1, 1, 'testLogOut')
+data.setCell(1, 2, 'tests.Test_LogOut')
+data.setCell(1, 3, 10798);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'lockedOutUserLogin')
-data.setCell(2, 2, 'tests.DemoPage')
-data.setCell(2, 3, 1241);
+data.setCell(2, 1, 'testCheckoutProcess')
+data.setCell(2, 2, 'tests.CheckoutPage.Test_verifyForm')
+data.setCell(2, 3, 10734);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invalidLogin_wrongPassword')
-data.setCell(3, 2, 'tests.DemoPage')
-data.setCell(3, 3, 1049);
+data.setCell(3, 1, 'testCheckoutProcess')
+data.setCell(3, 2, 'tests.CheckoutPage.Test_verifyForm')
+data.setCell(3, 3, 10630);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'login_withSpacesInUsername')
-data.setCell(4, 2, 'tests.DemoPage')
-data.setCell(4, 3, 906);
+data.setCell(4, 1, 'testCheckoutProcess')
+data.setCell(4, 2, 'tests.CheckoutPage.Test_verifyForm')
+data.setCell(4, 3, 10541);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'login_withCaseSensitiveUsername')
-data.setCell(5, 2, 'tests.DemoPage')
-data.setCell(5, 3, 794);
+data.setCell(5, 1, 'testCheckoutProcess')
+data.setCell(5, 2, 'tests.CheckoutPage.Test_verifyForm')
+data.setCell(5, 3, 10528);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'invalidLogin_wrongUsername')
-data.setCell(6, 2, 'tests.DemoPage')
-data.setCell(6, 3, 792);
+data.setCell(6, 1, 'verifyCartPageOpens')
+data.setCell(6, 2, 'tests.CartPage.Test_CartNavigation')
+data.setCell(6, 3, 10328);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'login_withSQLInjectionString')
-data.setCell(7, 2, 'tests.DemoPage')
-data.setCell(7, 3, 764);
+data.setCell(7, 1, 'addProduct')
+data.setCell(7, 2, 'tests.HomePage.Test_AddRemoveProduct')
+data.setCell(7, 3, 5353);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'invalidLogin_blankFields')
-data.setCell(8, 2, 'tests.DemoPage')
-data.setCell(8, 3, 712);
+data.setCell(8, 1, 'addProductAndRemove')
+data.setCell(8, 2, 'tests.HomePage.Test_AddRemoveProduct')
+data.setCell(8, 3, 5352);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyCheckout')
+data.setCell(9, 2, 'tests.CartPage.Test_CartCheckout')
+data.setCell(9, 3, 4600);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'login_withLongUsername')
+data.setCell(10, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(10, 3, 2987);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validLogin_standardUser')
+data.setCell(11, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(11, 3, 1494);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyContinueShoppingButton')
+data.setCell(12, 2, 'tests.CartPage.Test_CartNavigation')
+data.setCell(12, 3, 1217);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSortByPriceHighToLow')
+data.setCell(13, 2, 'tests.HomePage.Test_SortOption')
+data.setCell(13, 3, 1216);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'login_withSpacesInUsername')
+data.setCell(14, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(14, 3, 1103);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyAddedProductsAreInCart')
+data.setCell(15, 2, 'tests.CartPage.Test_CartItem')
+data.setCell(15, 3, 1027);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'invalidLogin_wrongPassword')
+data.setCell(16, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(16, 3, 768);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'invalidLogin_wrongUsername')
+data.setCell(17, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(17, 3, 711);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'login_withCaseSensitiveUsername')
+data.setCell(18, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(18, 3, 684);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'lockedOutUserLogin')
+data.setCell(19, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(19, 3, 683);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testCheckoutProcess')
+data.setCell(20, 2, 'tests.CheckoutPage.Test_verifyForm')
+data.setCell(20, 3, 678);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testCheckoutProcess')
+data.setCell(21, 2, 'tests.CheckoutPage.Test_verifyForm')
+data.setCell(21, 3, 676);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'login_withSQLInjectionString')
+data.setCell(22, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(22, 3, 646);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'invalidLogin_blankFields')
+data.setCell(23, 2, 'tests.LoginPage.LoginPageTest')
+data.setCell(23, 3, 636);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyCheckoutButtonBehavior')
+data.setCell(24, 2, 'tests.CartPage.Test_CartItem')
+data.setCell(24, 3, 381);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testSortByPriceLowToHigh')
+data.setCell(25, 2, 'tests.HomePage.Test_SortOption')
+data.setCell(25, 3, 324);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testSortByNameZToA')
+data.setCell(26, 2, 'tests.HomePage.Test_SortOption')
+data.setCell(26, 3, 280);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testSortByNameAToZ')
+data.setCell(27, 2, 'tests.HomePage.Test_SortOption')
+data.setCell(27, 3, 225);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyBackHomeNavigation')
+data.setCell(28, 2, 'tests.ConfirmationPage.ConfirmationPageTest')
+data.setCell(28, 3, 195);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyCartIsEmptyInitially')
+data.setCell(29, 2, 'tests.CartPage.Test_CartNavigation')
+data.setCell(29, 3, 167);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyRemoveProductFromCart')
+data.setCell(30, 2, 'tests.CartPage.Test_CartItem')
+data.setCell(30, 3, 153);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testFinishCheckout')
+data.setCell(31, 2, 'tests.CheckoutPage.Test_FinishCheckout')
+data.setCell(31, 3, 137);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyOrderConfirmationMessage')
+data.setCell(32, 2, 'tests.ConfirmationPage.ConfirmationPageTest')
+data.setCell(32, 3, 32);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -432,90 +1040,462 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.DemoPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.CartPage.Test_CartNavigation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">navigateToUrl(https://www.saucedemo.com/)</span>
-                <span class="method-start">4921 ms</span>
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">4005 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">validLogin_standardUser</span>
-                <span class="method-start">6794 ms</span>
+                <span class="method-name">verifyCartPageOpens</span>
+                <span class="method-start">6624 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=validLogin_standardUser status=SUCCESS method=DemoPage.validLogin_standardUser()[pr...)</span>
-                <span class="method-start">8527 ms</span>
+                <span class="method-name">captureFailure([TestResult name=verifyCartPageOpens status=SUCCESS method=Test_CartNavigation.verifyCartPageOpens()...)</span>
+                <span class="method-start">17032 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">invalidLogin_wrongPassword</span>
-                <span class="method-start">8557 ms</span>
+                <span class="method-name">verifyCartIsEmptyInitially</span>
+                <span class="method-start">17041 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=invalidLogin_wrongPassword status=SUCCESS method=DemoPage.invalidLogin_wrongPasswor...)</span>
-                <span class="method-start">9618 ms</span>
+                <span class="method-name">captureFailure([TestResult name=verifyCartIsEmptyInitially status=SUCCESS method=Test_CartNavigation.verifyCartIsEm...)</span>
+                <span class="method-start">17211 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">invalidLogin_wrongUsername</span>
-                <span class="method-start">9622 ms</span>
+                <span class="method-name">verifyContinueShoppingButton</span>
+                <span class="method-start">17215 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=invalidLogin_wrongUsername status=SUCCESS method=DemoPage.invalidLogin_wrongUsernam...)</span>
-                <span class="method-start">10422 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">invalidLogin_blankFields</span>
-                <span class="method-start">10427 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=invalidLogin_blankFields status=SUCCESS method=DemoPage.invalidLogin_blankFields()[...)</span>
-                <span class="method-start">11148 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">lockedOutUserLogin</span>
-                <span class="method-start">11156 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=lockedOutUserLogin status=SUCCESS method=DemoPage.lockedOutUserLogin()[pri:5, insta...)</span>
-                <span class="method-start">12406 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">login_withSpacesInUsername</span>
-                <span class="method-start">12410 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=login_withSpacesInUsername status=SUCCESS method=DemoPage.login_withSpacesInUsernam...)</span>
-                <span class="method-start">13325 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">login_withCaseSensitiveUsername</span>
-                <span class="method-start">13343 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=login_withCaseSensitiveUsername status=SUCCESS method=DemoPage.login_withCaseSensit...)</span>
-                <span class="method-start">14141 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">login_withSQLInjectionString</span>
-                <span class="method-start">14143 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=login_withSQLInjectionString status=SUCCESS method=DemoPage.login_withSQLInjectionS...)</span>
-                <span class="method-start">14920 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">login_withLongUsername</span>
-                <span class="method-start">14925 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureFailure([TestResult name=login_withLongUsername status=SUCCESS method=DemoPage.login_withLongUsername()[pri:...)</span>
-                <span class="method-start">19003 ms</span>
+                <span class="method-name">captureFailure([TestResult name=verifyContinueShoppingButton status=SUCCESS method=Test_CartNavigation.verifyContin...)</span>
+                <span class="method-start">18438 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19006 ms</span>
+                <span class="method-start">18440 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartPage.Test_CartItem</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">19430 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">21609 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddedProductsAreInCart</span>
+                <span class="method-start">23757 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=verifyAddedProductsAreInCart status=SUCCESS method=Test_CartItem.verifyAddedProduct...)</span>
+                <span class="method-start">24790 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyRemoveProductFromCart</span>
+                <span class="method-start">24792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=verifyRemoveProductFromCart status=SUCCESS method=Test_CartItem.verifyRemoveProduct...)</span>
+                <span class="method-start">24949 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCheckoutButtonBehavior</span>
+                <span class="method-start">24951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=verifyCheckoutButtonBehavior status=FAILURE method=Test_CartItem.verifyCheckoutButt...)</span>
+                <span class="method-start">25384 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25606 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartPage.Test_CartCheckout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">26355 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">28388 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckout</span>
+                <span class="method-start">30871 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=verifyCheckout status=SUCCESS method=Test_CartCheckout.verifyCheckout()[pri:0, inst...)</span>
+                <span class="method-start">35474 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35475 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_LogOut</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">36073 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">38035 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testLogOut</span>
+                <span class="method-start">39716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testLogOut status=SUCCESS method=Test_LogOut.testLogOut()[pri:0, instance:tests.Tes...)</span>
+                <span class="method-start">50520 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">50522 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutPage.Test_verifyForm</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">51518 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">53195 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutProcess(John, Doe, 12345, true)</span>
+                <span class="method-start">55647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">56328 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java....)</span>
+                <span class="method-start">67673 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutProcess(, Doe, 12345, false)</span>
+                <span class="method-start">67674 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">78307 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java....)</span>
+                <span class="method-start">88879 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheckoutProcess(John, Doe, ABCD, false)</span>
+                <span class="method-start">88881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">89564 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testCheckoutProcess status=FAILURE method=Test_verifyForm.testCheckoutProcess(java....)</span>
+                <span class="method-start">100095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutProcess(John, , 12345, false)</span>
+                <span class="method-start">100226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">110965 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java....)</span>
+                <span class="method-start">121545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutProcess(John, Doe, , false)</span>
+                <span class="method-start">121546 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">132088 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java....)</span>
+                <span class="method-start">142620 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutProcess(, , , false)</span>
+                <span class="method-start">142620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">153150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testCheckoutProcess status=SUCCESS method=Test_verifyForm.testCheckoutProcess(java....)</span>
+                <span class="method-start">163739 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163740 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutPage.Test_FinishCheckout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">164316 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">166380 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testFinishCheckout</span>
+                <span class="method-start">169661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testFinishCheckout status=SUCCESS method=Test_FinishCheckout.testFinishCheckout()[p...)</span>
+                <span class="method-start">169802 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">169804 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.HomePage.Test_AddRemoveProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">170309 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">171983 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addProduct</span>
+                <span class="method-start">174010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=addProduct status=SUCCESS method=Test_AddRemoveProduct.addProduct()[pri:0, instance...)</span>
+                <span class="method-start">179365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addProductAndRemove</span>
+                <span class="method-start">179367 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=addProductAndRemove status=FAILURE method=Test_AddRemoveProduct.addProductAndRemove...)</span>
+                <span class="method-start">184725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184941 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.HomePage.Test_CheckQuantityInCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">185417 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">187190 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkQuantity</span>
+                <span class="method-start">189040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=checkQuantity status=SUCCESS method=Test_CheckQuantityInCart.checkQuantity()[pri:0,...)</span>
+                <span class="method-start">205290 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">205329 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.HomePage.Test_SortOption</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">207662 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">211543 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSortByNameAToZ</span>
+                <span class="method-start">218216 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testSortByNameAToZ status=SUCCESS method=Test_SortOption.testSortByNameAToZ()[pri:1...)</span>
+                <span class="method-start">218441 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSortByNameZToA</span>
+                <span class="method-start">218445 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testSortByNameZToA status=SUCCESS method=Test_SortOption.testSortByNameZToA()[pri:2...)</span>
+                <span class="method-start">218728 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSortByPriceLowToHigh</span>
+                <span class="method-start">218730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testSortByPriceLowToHigh status=SUCCESS method=Test_SortOption.testSortByPriceLowTo...)</span>
+                <span class="method-start">219056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSortByPriceHighToLow</span>
+                <span class="method-start">219058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=testSortByPriceHighToLow status=SUCCESS method=Test_SortOption.testSortByPriceHighT...)</span>
+                <span class="method-start">220276 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">220291 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginPage.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">225395 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">navigateToUrl(https://www.saucedemo.com/)</span>
+                <span class="method-start">227927 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validLogin_standardUser</span>
+                <span class="method-start">228935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=validLogin_standardUser status=SUCCESS method=LoginPageTest.validLogin_standardUser...)</span>
+                <span class="method-start">230434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin_wrongPassword</span>
+                <span class="method-start">230444 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=invalidLogin_wrongPassword status=SUCCESS method=LoginPageTest.invalidLogin_wrongPa...)</span>
+                <span class="method-start">231216 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin_wrongUsername</span>
+                <span class="method-start">231221 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=invalidLogin_wrongUsername status=SUCCESS method=LoginPageTest.invalidLogin_wrongUs...)</span>
+                <span class="method-start">231936 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin_blankFields</span>
+                <span class="method-start">231938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=invalidLogin_blankFields status=SUCCESS method=LoginPageTest.invalidLogin_blankFiel...)</span>
+                <span class="method-start">232576 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">lockedOutUserLogin</span>
+                <span class="method-start">232578 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=lockedOutUserLogin status=SUCCESS method=LoginPageTest.lockedOutUserLogin()[pri:5, ...)</span>
+                <span class="method-start">233281 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withSpacesInUsername</span>
+                <span class="method-start">233283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withSpacesInUsername status=SUCCESS method=LoginPageTest.login_withSpacesInUs...)</span>
+                <span class="method-start">234388 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withCaseSensitiveUsername</span>
+                <span class="method-start">234389 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withCaseSensitiveUsername status=SUCCESS method=LoginPageTest.login_withCaseS...)</span>
+                <span class="method-start">235074 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withSQLInjectionString</span>
+                <span class="method-start">235076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withSQLInjectionString status=SUCCESS method=LoginPageTest.login_withSQLInjec...)</span>
+                <span class="method-start">235725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">login_withLongUsername</span>
+                <span class="method-start">235727 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=login_withLongUsername status=SUCCESS method=LoginPageTest.login_withLongUsername()...)</span>
+                <span class="method-start">238716 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">238718 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ConfirmationPage.ConfirmationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">240084 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(https://www.saucedemo.com/, standard_user, secret_sauce)</span>
+                <span class="method-start">242325 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyOrderConfirmationMessage</span>
+                <span class="method-start">246172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=verifyOrderConfirmationMessage status=SUCCESS method=ConfirmationPageTest.verifyOrd...)</span>
+                <span class="method-start">246207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyBackHomeNavigation</span>
+                <span class="method-start">246210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureFailure([TestResult name=verifyBackHomeNavigation status=SUCCESS method=ConfirmationPageTest.verifyBackHomeN...)</span>
+                <span class="method-start">246407 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">246408 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

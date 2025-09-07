@@ -1,0 +1,160 @@
+2025-09-07 22:44:22 [INFO] base.BaseTest - =========================================
+2025-09-07 22:44:22 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-07 22:44:22 [INFO] base.BaseTest - =========================================
+2025-09-07 22:44:22 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-07 22:44:22 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.2.0
+2025-09-07 22:44:22 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=139 in cache (valid until 23:40:26 07/09/2025 IST)
+2025-09-07 22:44:22 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome139=139.0.7258.154 in cache (valid until 22:40:26 08/09/2025 IST)
+2025-09-07 22:44:22 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-07 22:44:22 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 139.0.7258.154 found in cache
+2025-09-07 22:44:22 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\raksh\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+2025-09-07 22:44:25 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-07 22:44:25 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-07 22:44:25 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-07 22:44:25 [INFO] pages.LoginPage - Login submitted.
+2025-09-07 22:44:25 [INFO] pages.HomePage - Clicked on: Add product: Sauce Labs Backpack
+2025-09-07 22:44:25 [INFO] pages.HomePage - ✅ Added product: Sauce Labs Backpack
+2025-09-07 22:44:26 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:44:26 [INFO] pages.CartPage - ✅ Cart Page opened successfully.
+2025-09-07 22:44:26 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:44:26 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:44:26 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:44:26 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-09-07 22:44:26 [INFO] pages.CheckoutPage - Entered 'John' into: First Name
+2025-09-07 22:44:26 [INFO] pages.CheckoutPage - Entered 'Doe' into: Last Name
+2025-09-07 22:44:26 [INFO] pages.CheckoutPage - Entered '12345' into: Postal Code
+2025-09-07 22:44:26 [INFO] pages.CheckoutPage - ✅ Entered checkout info: John Doe | 12345
+2025-09-07 22:44:26 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-09-07 22:44:26 [INFO] pages.CheckoutPage - ✅ Clicked Continue button.
+2025-09-07 22:44:27 [INFO] pages.CheckoutPage - ✅ Checkout Overview Page opened successfully.
+2025-09-07 22:44:27 [INFO] utils.TestListener - ✅ TEST PASSED: testCheckoutProcess
+2025-09-07 22:44:27 [INFO] pages.CheckoutPage - Clicked on: Open Side Bar
+2025-09-07 22:44:37 [INFO] pages.CheckoutPage - Clicked on: All Items Button
+2025-09-07 22:44:37 [INFO] pages.HomePage - ✅ Home Page loaded successfully. Title: Products
+2025-09-07 22:44:38 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:44:38 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:44:38 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:44:38 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:44:38 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-09-07 22:44:38 [INFO] pages.CheckoutPage - Entered '' into: First Name
+2025-09-07 22:44:38 [INFO] pages.CheckoutPage - Entered 'Doe' into: Last Name
+2025-09-07 22:44:38 [INFO] pages.CheckoutPage - Entered '12345' into: Postal Code
+2025-09-07 22:44:38 [INFO] pages.CheckoutPage - ✅ Entered checkout info:  Doe | 12345
+2025-09-07 22:44:38 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-09-07 22:44:38 [INFO] pages.CheckoutPage - ✅ Clicked Continue button.
+2025-09-07 22:44:48 [DEBUG] pages.CheckoutPage - Checkout Overview Page not open yet.
+2025-09-07 22:44:48 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: First Name is required
+2025-09-07 22:44:49 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: First Name is required
+2025-09-07 22:44:49 [INFO] utils.TestListener - ✅ TEST PASSED: testCheckoutProcess
+2025-09-07 22:44:49 [INFO] pages.CheckoutPage - Clicked on: Open Side Bar
+2025-09-07 22:44:59 [INFO] pages.CheckoutPage - Clicked on: All Items Button
+2025-09-07 22:44:59 [INFO] pages.HomePage - ✅ Home Page loaded successfully. Title: Products
+2025-09-07 22:44:59 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:44:59 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:44:59 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:44:59 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:44:59 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-09-07 22:44:59 [INFO] pages.CheckoutPage - Entered 'John' into: First Name
+2025-09-07 22:44:59 [INFO] pages.CheckoutPage - Entered 'Doe' into: Last Name
+2025-09-07 22:45:00 [INFO] pages.CheckoutPage - Entered 'ABCD' into: Postal Code
+2025-09-07 22:45:00 [INFO] pages.CheckoutPage - ✅ Entered checkout info: John Doe | ABCD
+2025-09-07 22:45:00 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-09-07 22:45:00 [INFO] pages.CheckoutPage - ✅ Clicked Continue button.
+2025-09-07 22:45:00 [INFO] pages.CheckoutPage - ✅ Checkout Overview Page opened successfully.
+2025-09-07 22:45:00 [ERROR] utils.TestListener - ❌ TEST FAILED: testCheckoutProcess
+java.lang.AssertionError: ❌ Expected error but proceeded to Checkout Overview.
+	at org.junit.Assert.fail(Assert.java:89) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.Assert.assertTrue(Assert.java:42) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.Assert.assertFalse(Assert.java:65) ~[junit-4.13.2.jar:4.13.2]
+	at tests.CheckoutPage.Test_verifyForm.testCheckoutProcess(Test_verifyForm.java:61) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-09-07 22:45:00 [INFO] pages.CheckoutPage - Clicked on: Open Side Bar
+2025-09-07 22:45:10 [INFO] pages.CheckoutPage - Clicked on: All Items Button
+2025-09-07 22:45:10 [INFO] pages.HomePage - ✅ Home Page loaded successfully. Title: Products
+2025-09-07 22:45:10 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:45:10 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:45:10 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:45:10 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:45:10 [ERROR] base.BaseTest - ❌ Test Failed: testCheckoutProcess
+2025-09-07 22:45:10 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-09-07 22:45:11 [INFO] pages.CheckoutPage - Entered 'John' into: First Name
+2025-09-07 22:45:11 [INFO] pages.CheckoutPage - Entered '' into: Last Name
+2025-09-07 22:45:11 [INFO] pages.CheckoutPage - Entered '12345' into: Postal Code
+2025-09-07 22:45:11 [INFO] pages.CheckoutPage - ✅ Entered checkout info: John  | 12345
+2025-09-07 22:45:11 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-09-07 22:45:11 [INFO] pages.CheckoutPage - ✅ Clicked Continue button.
+2025-09-07 22:45:21 [DEBUG] pages.CheckoutPage - Checkout Overview Page not open yet.
+2025-09-07 22:45:21 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: Last Name is required
+2025-09-07 22:45:21 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: Last Name is required
+2025-09-07 22:45:21 [INFO] utils.TestListener - ✅ TEST PASSED: testCheckoutProcess
+2025-09-07 22:45:21 [INFO] pages.CheckoutPage - Clicked on: Open Side Bar
+2025-09-07 22:45:31 [INFO] pages.CheckoutPage - Clicked on: All Items Button
+2025-09-07 22:45:31 [INFO] pages.HomePage - ✅ Home Page loaded successfully. Title: Products
+2025-09-07 22:45:32 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:45:32 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:45:32 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:45:32 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:45:32 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-09-07 22:45:32 [INFO] pages.CheckoutPage - Entered 'John' into: First Name
+2025-09-07 22:45:32 [INFO] pages.CheckoutPage - Entered 'Doe' into: Last Name
+2025-09-07 22:45:32 [INFO] pages.CheckoutPage - Entered '' into: Postal Code
+2025-09-07 22:45:32 [INFO] pages.CheckoutPage - ✅ Entered checkout info: John Doe | 
+2025-09-07 22:45:32 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-09-07 22:45:32 [INFO] pages.CheckoutPage - ✅ Clicked Continue button.
+2025-09-07 22:45:42 [DEBUG] pages.CheckoutPage - Checkout Overview Page not open yet.
+2025-09-07 22:45:42 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: Postal Code is required
+2025-09-07 22:45:42 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: Postal Code is required
+2025-09-07 22:45:42 [INFO] utils.TestListener - ✅ TEST PASSED: testCheckoutProcess
+2025-09-07 22:45:42 [INFO] pages.CheckoutPage - Clicked on: Open Side Bar
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - Clicked on: All Items Button
+2025-09-07 22:45:53 [INFO] pages.HomePage - ✅ Home Page loaded successfully. Title: Products
+2025-09-07 22:45:53 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:45:53 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:45:53 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:45:53 [INFO] utils.TestListener - ===== STARTING TEST: testCheckoutProcess =====
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - Entered '' into: First Name
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - Entered '' into: Last Name
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - Entered '' into: Postal Code
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - ✅ Entered checkout info:   | 
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-09-07 22:45:53 [INFO] pages.CheckoutPage - ✅ Clicked Continue button.
+2025-09-07 22:46:03 [DEBUG] pages.CheckoutPage - Checkout Overview Page not open yet.
+2025-09-07 22:46:03 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: First Name is required
+2025-09-07 22:46:03 [WARN] pages.CheckoutPage - ⚠️ Checkout Error displayed: Error: First Name is required
+2025-09-07 22:46:03 [INFO] utils.TestListener - ✅ TEST PASSED: testCheckoutProcess
+2025-09-07 22:46:03 [INFO] pages.CheckoutPage - Clicked on: Open Side Bar
+2025-09-07 22:46:14 [INFO] pages.CheckoutPage - Clicked on: All Items Button
+2025-09-07 22:46:14 [INFO] pages.HomePage - ✅ Home Page loaded successfully. Title: Products
+2025-09-07 22:46:14 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 22:46:14 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 22:46:14 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 22:46:14 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 22:46:15 [INFO] base.BaseTest - Browser closed.
+2025-09-07 22:46:15 [INFO] base.BaseTest - ===== Test Execution Finished =====
+
