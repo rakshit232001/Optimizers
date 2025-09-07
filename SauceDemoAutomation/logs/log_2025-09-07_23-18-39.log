@@ -1,0 +1,39 @@
+2025-09-07 23:18:39 [INFO] base.BaseTest - =========================================
+2025-09-07 23:18:39 [INFO] base.BaseTest - ======== Test Execution Started =========
+2025-09-07 23:18:39 [INFO] base.BaseTest - =========================================
+2025-09-07 23:18:39 [INFO] base.BaseTest - Selected Browser: chrome
+2025-09-07 23:18:39 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 6.2.0
+2025-09-07 23:18:39 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=139 in cache (valid until 23:40:26 07/09/2025 IST)
+2025-09-07 23:18:39 [DEBUG] io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome139=139.0.7258.154 in cache (valid until 22:40:26 08/09/2025 IST)
+2025-09-07 23:18:39 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-07 23:18:39 [DEBUG] io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 139.0.7258.154 found in cache
+2025-09-07 23:18:39 [INFO] io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\raksh\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+2025-09-07 23:18:43 [INFO] pages.LoginPage - Entered 'standard_user' into: UserName Field
+2025-09-07 23:18:43 [INFO] pages.LoginPage - Entered 'secret_sauce' into: Password Field
+2025-09-07 23:18:43 [INFO] pages.LoginPage - Clicked on: Login Button
+2025-09-07 23:18:43 [INFO] pages.LoginPage - Login submitted.
+2025-09-07 23:18:43 [INFO] pages.HomePage - Clicked on: Add product: Sauce Labs Backpack
+2025-09-07 23:18:43 [INFO] pages.HomePage - ✅ Added product: Sauce Labs Backpack
+2025-09-07 23:18:43 [INFO] pages.HomePage - Clicked on: Cart Button
+2025-09-07 23:18:43 [INFO] pages.CartPage - ✅ Cart Page opened successfully.
+2025-09-07 23:18:44 [INFO] pages.CartPage - Clicked on: Checkout Button
+2025-09-07 23:18:44 [INFO] pages.CartPage - ✅ Navigating to CheckoutPage.
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - ✅ Checkout Page opened successfully.
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - Entered 'Rakshit' into: First Name
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - Entered 'Bhadoria' into: Last Name
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - Entered '123456' into: Postal Code
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - ✅ Entered checkout info: Rakshit Bhadoria | 123456
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - Clicked on: Continue Button
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - ✅ Clicked Continue button.
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - ✅ Checkout Overview Page opened successfully.
+2025-09-07 23:18:44 [INFO] utils.TestListener - ===== STARTING TEST: testFinishCheckout =====
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - Clicked on: Finish Button
+2025-09-07 23:18:44 [INFO] pages.CheckoutPage - ✅ Clicked Finish button.
+2025-09-07 23:18:44 [INFO] pages.ConfirmationPage - Verifying if order confirmation message is displayed.
+2025-09-07 23:18:44 [INFO] base.BaseTest - ✅ Checkout Completion test passed, confirmation displayed.
+2025-09-07 23:18:44 [INFO] utils.TestListener - ✅ TEST PASSED: testFinishCheckout
+2025-09-07 23:18:45 [INFO] base.BaseTest - Browser closed.
+2025-09-07 23:18:45 [INFO] base.BaseTest - ===== Test Execution Finished =====
+
+2025-09-07 23:18:45 [INFO] utils.TestListener - ===== FINISHED TEST SUITE: CheckoutPage Tests =====
+2025-09-07 23:18:45 [INFO] utils.TestListener - ===== STARTING TEST SUITE: HomePage Tests =====
