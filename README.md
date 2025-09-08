@@ -102,10 +102,7 @@ SauceDemoAutomation/
    ```bash
    mvn clean test
    ```  
-3. Run specific suite via TestNG  
-   ```bash
-   mvn clean test -DsuiteXmlFile=testng.xml
-   ```  
+  
 
 ---
 
